@@ -1,0 +1,12 @@
+{
+    "data_type": "matrix",
+    "value_type": "double",
+    "rows": 500,
+    "cols": 300,
+    "nnz": 150000,
+    "format": "csv",
+    "author": "eliasstrauss",
+    "header": false,
+    "sep": ",",
+    "created": "2023-05-22 15:32:41 CEST"
+}

@@ -1,0 +1,12 @@
+{
+    "data_type": "matrix",
+    "value_type": "double",
+    "rows": 9,
+    "cols": 1,
+    "nnz": 9,
+    "format": "csv",
+    "author": "eliasstrauss",
+    "header": false,
+    "sep": ",",
+    "created": "2023-05-24 12:22:25 CEST"
+}
