@@ -1,87 +1,128 @@
+counter=0
+mcounter=0
+plot_args=""
 run_test() {
+    counter=$((counter + 1))
+    plot_args="$plot_args $1:results/$counter.csv"
     python3 data_prep2.py $shrinking $expansion
-    ./run_java.sh dml_scripts/t1.dml data/words_$expansion.csv data/words_dictionary_$shrinking.csv data/embeddings_$shrinking.csv results/$1.csv
+    ./run_java.sh dml_scripts/t1.dml data/words_$expansion.csv data/words_dictionary_$shrinking.csv data/embeddings_$shrinking.csv results/$counter.csv
+}
+
+run_test2() {
+    counter=$((counter + 1))
+    plot_args="$plot_args n$1:results/$counter.csv"
+    python3 data_prep2.py $shrinking $expansion
+    ./run_java2.sh dml_scripts/t2.dml data/words_$expansion.csv data/words_dictionary_$shrinking.csv data/embeddings_$shrinking.csv results/$counter.csv
 }
 
 run_test_multi() {
+    counter=$((mcounter + 1))
+    plot_args="$plot_args m$1:results/m$mcounter.csv"
     python3 data_prep2.py $shrinking $expansion
-    ./run_java.sh dml_scripts/t1.dml data/words_$expansion.csv data/words_dictionary_$shrinking.csv data/embeddings_$shrinking.csv results/$1.csv -m
+    ./run_java.sh dml_scripts/t1.dml data/words_$expansion.csv data/words_dictionary_$shrinking.csv data/embeddings_$shrinking.csv results/m$mcounter.csv -m
 }
-shrinking=10
-expansion=100
-run_test 9
-
-expansion=240
-run_test 10
-
-exit 0
 
 expansion=100
 shrinking=50
-run_test 1
+run_test2 d:0.2K
 
 shrinking=10
-run_test 2
+run_test2 d:1K
+
+expansion=100
+shrinking=50
+run_test d:0.2K
+
+shrinking=10
+run_test d:1K
+
+echo "python3 plot.py $plot_args"
+python3 plot.py $plot_args
+exit 0
+
+#start tests, non multi
+
+expansion=100
+shrinking=50
+run_test d:0.2K
+
+shrinking=10
+run_test d:1K
 
 shrinking=2
-run_test 3
+run_test d:5K
 
 shrinking=1
-run_test 4
+run_test d:10K
 
 expansion=40
-run_test 5
+run_test w:400K
 
 expansion=80
-run_test 6
-
-expansion=120
-run_test 7
+run_test w:800K
 
 expansion=160
-run_test 8
-
-expansion=200
-run_test 9
+run_test w:1600K
 
 expansion=240
-run_test 10
+run_test w:2400K
 
+#new encoder
+expansion=100
+shrinking=50
+run_test2 d:0.2K
+
+shrinking=10
+run_test2 d:1K
+
+shrinking=2
+run_test2 d:5K
+
+shrinking=1
+run_test2 d:10K
+
+expansion=40
+run_test2 w:400K
+
+expansion=80
+run_test2 w:800K
+
+expansion=160
+run_test2 w:1600K
+
+expansion=240
+run_test2 w:2400K
+
+echo "python3 plot.py $plot_args"
+python3 plot.py $plot_args
+
+exit 0
 #multi-threaded
 
 expansion=100
 shrinking=50
-run_test_multi 11
+run_test_multi d:0.2K
 
 shrinking=10
-run_test_multi 12
+run_test_multi d:1K
 
 shrinking=2
-run_test_multi 13
+run_test_multi d:5K
 
 shrinking=1
-run_test_multi 14
+run_test_multi d:10K
 
 expansion=40
-run_test_multi 15
+run_test_multi w:400K
 
 expansion=80
-run_test_multi 16
-
-expansion=120
-run_test_multi 17
+run_test_multi w:800K
 
 expansion=160
-run_test_multi 18
-
-expansion=200
-run_test_multi 19
+run_test_multi w:1600K
 
 expansion=240
-run_test_multi 20
+run_test_multi w:2400K
 
-
-python3 plot.py d:0.2K:results/1.csv d:1K:results/2.csv d:5K:results/3.csv d:10K:results/4.csv w:400K:results/5.csv \
-w:800K:results/6.csv w:1200K:results/7.csv w:1600K:results/8.csv w:2000K:results/9.csv w:2400K:results/10.csv \
-md:0.2K:results/11.csv md:1K:results/12.csv md:5K:results/13.csv md:10K:results/14.csv mw:400K:results/15.csv \
-mw:800K:results/16.csv mw:1200K:results/17.csv mw:1600K:results/18.csv mw:2000K:results/19.csv mw:2400K:results/20.csv
+echo "python3 plot.py $plot_args"
+python3 plot.py $plot_args

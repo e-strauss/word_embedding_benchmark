@@ -37,6 +37,7 @@ java -Xmx7g -Xms7g -Xmn400m \
     org.apache.sysds.api.DMLScript \
     -f $1 \
     -debug \
+    -stats \
     -exec singlenode \
     -config config/config.xml \
     -args $2 $3 $4 $5

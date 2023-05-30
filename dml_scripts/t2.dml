@@ -17,7 +17,7 @@ print(toString(E[10,10]))
 
 t2 = time();
 
-max_runs = 9;
+max_runs = 6;
 Duration = matrix(0, rows=max_runs, cols=1);
 
 delta_t = floor((t2-t1)/1000000)
@@ -25,7 +25,7 @@ delta_t = floor((t2-t1)/1000000)
 
 runs = 0
 
-while (runs < 6){
+while (runs < max_runs){
 	#print("INFO: starting transformapply with word_embedding");
 	t1 = time();
 	Data_enc = transformapply(target=Data, spec=jspec, meta=Meta, embedding=E);
@@ -35,14 +35,6 @@ while (runs < 6){
 	print("Elapsed time = "+ delta_t +" millsec");
 	runs = runs + 1;
 	Duration[runs,1] = delta_t;
-}
-
-
-jspec = "{ids: true, dummycode: [1]}";
-
-while (runs < max_runs){
-	runs = runs + 1;
-	Duration[runs,1] = 0.0;
 }
 
 write(Duration, $4, format="csv");

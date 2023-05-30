@@ -1,0 +1,1 @@
+cp /Users/eliasstrauss/Desktop/TU/systemds-fork/target/SystemDS.jar /Users/eliasstrauss/Desktop/TU/BSc/word_embeddings_benchmark/target$1/SystemDS.jar

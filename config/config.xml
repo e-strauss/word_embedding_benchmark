@@ -31,7 +31,7 @@
     <sysds.defaultblocksize>1000</sysds.defaultblocksize>
  
     <!-- enables multi-threaded operations in singlenode control program -->
-    <sysds.cp.parallel.ops>true</sysds.cp.parallel.ops>
+    <sysds.cp.parallel.ops>false</sysds.cp.parallel.ops>
     
     <!-- enables multi-threaded read/write in singlenode control program -->
     <sysds.cp.parallel.io>false</sysds.cp.parallel.io>

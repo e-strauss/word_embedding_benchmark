@@ -26,7 +26,6 @@ delta_t = floor((t2-t1)/1000000)
 runs = 0
 
 while (runs < 6){
-	#print("INFO: starting transformapply with word_embedding");
 	t1 = time();
 	Data_enc = transformapply(target=Data, spec=jspec, meta=Meta, embedding=E);
 	print("("+nrow(Data_enc)+", "+ncol(Data_enc)+")");
