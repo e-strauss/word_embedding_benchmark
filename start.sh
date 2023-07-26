@@ -22,81 +22,48 @@ run_test_multi() {
     ./run_java.sh dml_scripts/t1.dml data/words_$expansion.csv data/words_dictionary_$shrinking.csv data/embeddings_$shrinking.csv results/m$mcounter.csv -m
 }
 
-expansion=100
-shrinking=50
-run_test2 d:0.2K
-
-shrinking=10
-run_test2 d:1K
-
-expansion=100
-shrinking=50
-run_test d:0.2K
-
-shrinking=10
-run_test d:1K
-
-echo "python3 plot.py $plot_args"
-python3 plot.py $plot_args
-exit 0
-
 #start tests, non multi
-
-expansion=100
-shrinking=50
-run_test d:0.2K
-
-shrinking=10
-run_test d:1K
-
-shrinking=2
-run_test d:5K
-
 shrinking=1
-run_test d:10K
-
-expansion=40
-run_test w:400K
-
-expansion=80
-run_test w:800K
-
-expansion=160
-run_test w:1600K
 
 expansion=240
-run_test w:2400K
+run_test w:2.4M
+
+expansion=360
+run_test w:3.6M
+
+expansion=480
+run_test w:4.8M
+
+expansion=600
+run_test w:6.0M
+
+expansion=720
+run_test w:7.2M
 
 #new encoder
-expansion=100
-shrinking=50
-run_test2 d:0.2K
-
-shrinking=10
-run_test2 d:1K
-
-shrinking=2
-run_test2 d:5K
-
-shrinking=1
-run_test2 d:10K
-
-expansion=40
-run_test2 w:400K
-
-expansion=80
-run_test2 w:800K
-
-expansion=160
-run_test2 w:1600K
 
 expansion=240
-run_test2 w:2400K
+run_test2 w:2.4M
+
+expansion=360
+run_test2 w:3.6M
+
+expansion=480
+run_test2 w:4.8M
+
+expansion=600
+run_test2 w:6.0M
+
+expansion=720
+run_test2 w:7.2M
 
 echo "python3 plot.py $plot_args"
+source myenv/bin/activate
 python3 plot.py $plot_args
-
+deactivate
 exit 0
+
+
 #multi-threaded
 
 expansion=100

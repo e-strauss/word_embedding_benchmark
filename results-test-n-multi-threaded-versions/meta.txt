@@ -1,0 +1,3 @@
+mtw:5M:1.csv muw:5M:2.csv mpw:5M:3.csv mtw:15M:4.csv muw:15M:5.csv mpw:15M:6.csv mtw:30M:7.csv muw:30M:8.csv mpw:30M:9.csv mtw:60M:10.csv muw:60M:11.csv mpw:60M:12.csv mtw:120M:13.csv muw:120M:14.csv mpw:120M:15.csv mtw:240M:16.csv muw:240M:17.csv mpw:240M:18.csv
+mb:baseline-mn:not_merged_HashMaps-mt:MergedHashMaps-mu:ConcurrentHashMaps-mp:Upfront_built_HashMap
+Different-input-sizes,-same-dictionary-size-(10K),-multithreaded Input-size

@@ -1,0 +1,2688 @@
+java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_1200.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/1.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+offensive
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(6007200, 300)
+Elapsed time = 1467.0 millsec
+(6007200, 300)
+Elapsed time = 795.0 millsec
+(6007200, 300)
+Elapsed time = 711.0 millsec
+(6007200, 300)
+Elapsed time = 640.0 millsec
+(6007200, 300)
+Elapsed time = 739.0 millsec
+(6007200, 300)
+Elapsed time = 747.0 millsec
+SystemDS Statistics:
+Total elapsed time:		8.038 sec.
+Total compilation time:		0.531 sec.
+Total execution time:		7.507 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.299/0.000/0.002/0.055 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.025 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	36.618 sec.
+	WordEmbedding apply time:	36.618 sec.
+TransformEncode PreProc. time:	0.095 sec.
+TransformEncode PostProc. time:	0.757 sec.
+Total JIT compile time:		6.425 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.019 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    5.077      6
+  2  rightIndex        2.272      3
+  3  write             0.055      1
+  4  ncol              0.030      7
+  5  time              0.014     14
+  6  toString          0.007      3
+  7  floor             0.004      6
+  8  <                 0.004      7
+  9  rand              0.004      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target4/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_1200.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/2.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+offensive
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 978.0 millsec
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 989.0 millsec
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 748.0 millsec
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 717.0 millsec
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 851.0 millsec
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 844.0 millsec
+SystemDS Statistics:
+Total elapsed time:		7.823 sec.
+Total compilation time:		0.526 sec.
+Total execution time:		7.297 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.060/0.005/0.003/0.052 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.026 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	176.296 sec.
+	WordEmbedding apply time:	176.296 sec.
+TransformEncode PreProc. time:	0.096 sec.
+TransformEncode PostProc. time:	0.917 sec.
+Total JIT compile time:		6.181 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.014 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    5.109      6
+  2  rightIndex        2.030      3
+  3  write             0.052      1
+  4  ncol              0.033      7
+  5  time              0.014     14
+  6  toString          0.009      3
+  7  floor             0.004      6
+  8  <                 0.004      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target5/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_1200.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/3.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+offensive
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(6007200, 300)
+Elapsed time = 2045.0 millsec
+(6007200, 300)
+Elapsed time = 1309.0 millsec
+(6007200, 300)
+Elapsed time = 1345.0 millsec
+(6007200, 300)
+Elapsed time = 1363.0 millsec
+(6007200, 300)
+Elapsed time = 1317.0 millsec
+(6007200, 300)
+Elapsed time = 1335.0 millsec
+SystemDS Statistics:
+Total elapsed time:		11.790 sec.
+Total compilation time:		0.595 sec.
+Total execution time:		11.195 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.370/0.000/0.002/0.055 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.029 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	7.393 sec.
+	WordEmbedding apply time:	7.393 sec.
+TransformEncode PreProc. time:	0.098 sec.
+TransformEncode PostProc. time:	1.144 sec.
+Total JIT compile time:		5.47 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.02 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    8.691      6
+  2  rightIndex        2.340      3
+  3  write             0.055      1
+  4  ncol              0.033      7
+  5  time              0.014     14
+  6  toString          0.008      3
+  7  floor             0.005      6
+  8  <                 0.003      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_4800.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/4.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+bed
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(24028800, 300)
+Elapsed time = 2790.0 millsec
+(24028800, 300)
+Elapsed time = 2291.0 millsec
+(24028800, 300)
+Elapsed time = 2195.0 millsec
+(24028800, 300)
+Elapsed time = 2293.0 millsec
+(24028800, 300)
+Elapsed time = 2208.0 millsec
+(24028800, 300)
+Elapsed time = 2268.0 millsec
+SystemDS Statistics:
+Total elapsed time:		18.656 sec.
+Total compilation time:		0.597 sec.
+Total execution time:		18.059 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	3.914/0.000/0.002/0.045 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.022 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	32.204 sec.
+	WordEmbedding apply time:	32.204 sec.
+TransformEncode PreProc. time:	0.264 sec.
+TransformEncode PostProc. time:	1.828 sec.
+Total JIT compile time:		6.154 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.025 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   14.030      6
+  2  rightIndex        3.894      3
+  3  write             0.045      1
+  4  ncol              0.023      7
+  5  time              0.016     14
+  6  toString          0.005      3
+  7  floor             0.004      6
+  8  <                 0.004      7
+  9  rand              0.003      1
+ 10  +                 0.001     42
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target4/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_4800.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/5.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+bed
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2554.0 millsec
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2757.0 millsec
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2667.0 millsec
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2658.0 millsec
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2571.0 millsec
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 1930.0 millsec
+SystemDS Statistics:
+Total elapsed time:		19.465 sec.
+Total compilation time:		0.599 sec.
+Total execution time:		18.866 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	3.638/0.004/0.002/0.042 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.020 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	568.612 sec.
+	WordEmbedding apply time:	568.612 sec.
+TransformEncode PreProc. time:	0.268 sec.
+TransformEncode PostProc. time:	2.048 sec.
+Total JIT compile time:		6.63 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.019 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   15.123      6
+  2  rightIndex        3.613      3
+  3  write             0.043      1
+  4  ncol              0.028      7
+  5  time              0.014     14
+  6  toString          0.006      3
+  7  <                 0.003      7
+  8  rand              0.003      1
+  9  floor             0.003      6
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target5/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_4800.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/6.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+bed
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(24028800, 300)
+Elapsed time = 5712.0 millsec
+(24028800, 300)
+Elapsed time = 5469.0 millsec
+(24028800, 300)
+Elapsed time = 4376.0 millsec
+(24028800, 300)
+Elapsed time = 4599.0 millsec
+(24028800, 300)
+Elapsed time = 4235.0 millsec
+(24028800, 300)
+Elapsed time = 4315.0 millsec
+SystemDS Statistics:
+Total elapsed time:		33.081 sec.
+Total compilation time:		0.524 sec.
+Total execution time:		32.557 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	3.753/0.000/0.002/0.046 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.023 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	26.315 sec.
+	WordEmbedding apply time:	26.315 sec.
+TransformEncode PreProc. time:	0.273 sec.
+TransformEncode PostProc. time:	2.040 sec.
+Total JIT compile time:		5.27 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.019 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   28.688      6
+  2  rightIndex        3.726      3
+  3  write             0.047      1
+  4  ncol              0.029      7
+  5  time              0.013     14
+  6  toString          0.006      3
+  7  floor             0.005      6
+  8  <                 0.004      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_18400.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/7.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+never
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(92110400, 300)
+Elapsed time = 8870.0 millsec
+(92110400, 300)
+Elapsed time = 9381.0 millsec
+(92110400, 300)
+Elapsed time = 7683.0 millsec
+(92110400, 300)
+Elapsed time = 7857.0 millsec
+(92110400, 300)
+Elapsed time = 7508.0 millsec
+(92110400, 300)
+Elapsed time = 7871.0 millsec
+SystemDS Statistics:
+Total elapsed time:		58.770 sec.
+Total compilation time:		0.517 sec.
+Total execution time:		58.253 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	8.988/0.000/0.002/0.043 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.021 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	163.900 sec.
+	WordEmbedding apply time:	163.900 sec.
+TransformEncode PreProc. time:	1.014 sec.
+TransformEncode PostProc. time:	9.255 sec.
+Total JIT compile time:		7.764 sec.
+Total JVM GC count:		2.
+Total JVM GC time:		2.3 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   49.155      6
+  2  rightIndex        8.960      3
+  3  write             0.044      1
+  4  ncol              0.031      7
+  5  time              0.014     14
+  6  toString          0.006      3
+  7  <                 0.004      7
+  8  floor             0.004      6
+  9  rand              0.003      1
+ 10  rmvar             0.001     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target4/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_18400.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/8.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+never
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 7557.0 millsec
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 9218.0 millsec
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 9912.0 millsec
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 9727.0 millsec
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 8568.0 millsec
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 8843.0 millsec
+SystemDS Statistics:
+Total elapsed time:		63.674 sec.
+Total compilation time:		0.605 sec.
+Total execution time:		63.069 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	9.149/0.004/0.002/0.045 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.019 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	1906.756 sec.
+	WordEmbedding apply time:	1906.756 sec.
+TransformEncode PreProc. time:	0.919 sec.
+TransformEncode PostProc. time:	9.811 sec.
+Total JIT compile time:		6.159 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.018 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   53.815      6
+  2  rightIndex        9.127      3
+  3  write             0.045      1
+  4  ncol              0.024      7
+  5  time              0.014     14
+  6  toString          0.007      3
+  7  floor             0.003      6
+  8  <                 0.003      7
+  9  rand              0.002      1
+ 10  rmvar             0.001     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target5/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_18400.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/9.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+never
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(92110400, 300)
+Elapsed time = 20272.0 millsec
+(92110400, 300)
+Elapsed time = 19842.0 millsec
+(92110400, 300)
+Elapsed time = 18554.0 millsec
+(92110400, 300)
+Elapsed time = 17564.0 millsec
+(92110400, 300)
+Elapsed time = 20559.0 millsec
+(92110400, 300)
+Elapsed time = 18521.0 millsec
+SystemDS Statistics:
+Total elapsed time:		124.887 sec.
+Total compilation time:		0.580 sec.
+Total execution time:		124.307 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	8.898/0.000/0.002/0.043 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.021 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	105.859 sec.
+	WordEmbedding apply time:	105.859 sec.
+TransformEncode PreProc. time:	0.969 sec.
+TransformEncode PostProc. time:	8.418 sec.
+Total JIT compile time:		5.633 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.016 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply  115.299      6
+  2  rightIndex        8.869      3
+  3  write             0.043      1
+  4  ncol              0.032      7
+  5  time              0.014     14
+  6  toString          0.007      3
+  7  <                 0.004      7
+  8  floor             0.004      6
+  9  rand              0.004      1
+ 10  rmvar             0.001     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_36800.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/10.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+looked
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(184220800, 300)
+Elapsed time = 14506.0 millsec
+(184220800, 300)
+Elapsed time = 14906.0 millsec
+(184220800, 300)
+Elapsed time = 14555.0 millsec
+(184220800, 300)
+Elapsed time = 15019.0 millsec
+(184220800, 300)
+Elapsed time = 13619.0 millsec
+(184220800, 300)
+Elapsed time = 14418.0 millsec
+SystemDS Statistics:
+Total elapsed time:		103.459 sec.
+Total compilation time:		0.500 sec.
+Total execution time:		102.959 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	15.802/0.000/0.002/0.045 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.019 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	110.653 sec.
+	WordEmbedding apply time:	110.653 sec.
+TransformEncode PreProc. time:	2.064 sec.
+TransformEncode PostProc. time:	16.823 sec.
+Total JIT compile time:		5.837 sec.
+Total JVM GC count:		3.
+Total JVM GC time:		2.465 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   87.010      6
+  2  rightIndex       15.776      3
+  3  time              0.053     14
+  4  write             0.045      1
+  5  ncol              0.029      7
+  6  toString          0.006      3
+  7  <                 0.004      7
+  8  rand              0.003      1
+  9  floor             0.003      6
+ 10  rmvar             0.001     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target4/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_36800.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/11.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+looked
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 16499.0 millsec
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 16535.0 millsec
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 17891.0 millsec
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 17601.0 millsec
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 17771.0 millsec
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 17881.0 millsec
+SystemDS Statistics:
+Total elapsed time:		121.655 sec.
+Total compilation time:		0.600 sec.
+Total execution time:		121.055 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	16.778/0.004/0.002/0.046 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.021 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	3635.521 sec.
+	WordEmbedding apply time:	3635.521 sec.
+TransformEncode PreProc. time:	1.906 sec.
+TransformEncode PostProc. time:	18.726 sec.
+Total JIT compile time:		7.168 sec.
+Total JVM GC count:		2.
+Total JVM GC time:		1.7 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply  104.165      6
+  2  rightIndex       16.749      3
+  3  write             0.046      1
+  4  ncol              0.033      7
+  5  time              0.015     14
+  6  toString          0.006      3
+  7  rand              0.003      1
+  8  <                 0.003      7
+  9  floor             0.003      6
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target5/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_36800.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/12.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+looked
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(184220800, 300)
+Elapsed time = 36782.0 millsec
+(184220800, 300)
+Elapsed time = 34286.0 millsec
+(184220800, 300)
+Elapsed time = 35091.0 millsec
+(184220800, 300)
+Elapsed time = 33547.0 millsec
+(184220800, 300)
+Elapsed time = 33653.0 millsec
+(184220800, 300)
+Elapsed time = 33818.0 millsec
+SystemDS Statistics:
+Total elapsed time:		223.923 sec.
+Total compilation time:		0.511 sec.
+Total execution time:		223.411 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	16.138/0.000/0.002/0.045 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.019 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	189.677 sec.
+	WordEmbedding apply time:	189.677 sec.
+TransformEncode PreProc. time:	1.844 sec.
+TransformEncode PostProc. time:	15.592 sec.
+Total JIT compile time:		7.485 sec.
+Total JVM GC count:		2.
+Total JVM GC time:		1.713 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply  207.164      6
+  2  rightIndex       16.113      3
+  3  write             0.045      1
+  4  ncol              0.028      7
+  5  time              0.014     14
+  6  toString          0.007      3
+  7  rand              0.004      1
+  8  <                 0.004      7
+  9  floor             0.003      6
+ 10  rmvar             0.001     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_1200.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/1.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+offensive
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(6007200, 300)
+Elapsed time = 1448.0 millsec
+(6007200, 300)
+Elapsed time = 760.0 millsec
+(6007200, 300)
+Elapsed time = 696.0 millsec
+(6007200, 300)
+Elapsed time = 824.0 millsec
+(6007200, 300)
+Elapsed time = 762.0 millsec
+(6007200, 300)
+Elapsed time = 715.0 millsec
+SystemDS Statistics:
+Total elapsed time:		8.007 sec.
+Total compilation time:		0.548 sec.
+Total execution time:		7.459 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.143/0.000/0.002/0.052 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.028 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	36.532 sec.
+	WordEmbedding apply time:	36.532 sec.
+TransformEncode PreProc. time:	0.090 sec.
+TransformEncode PostProc. time:	0.849 sec.
+Total JIT compile time:		6.468 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.013 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    5.184      6
+  2  rightIndex        2.116      3
+  3  write             0.052      1
+  4  ncol              0.030      7
+  5  time              0.015     14
+  6  toString          0.008      3
+  7  floor             0.004      6
+  8  <                 0.004      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target4/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_1200.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/2.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+offensive
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 943.0 millsec
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 970.0 millsec
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 635.0 millsec
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 838.0 millsec
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 751.0 millsec
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 727.0 millsec
+SystemDS Statistics:
+Total elapsed time:		7.829 sec.
+Total compilation time:		0.541 sec.
+Total execution time:		7.287 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.307/0.004/0.002/0.054 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.033 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	170.152 sec.
+	WordEmbedding apply time:	170.152 sec.
+TransformEncode PreProc. time:	0.091 sec.
+TransformEncode PostProc. time:	0.837 sec.
+Total JIT compile time:		6.814 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.018 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    4.843      6
+  2  rightIndex        2.271      3
+  3  write             0.054      1
+  4  ncol              0.039      7
+  5  time              0.014     14
+  6  toString          0.007      3
+  7  <                 0.004      7
+  8  floor             0.004      6
+  9  rand              0.004      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target56/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_1200.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/3.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+offensive
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(6007200, 300)
+Elapsed time = 1220.0 millsec
+(6007200, 300)
+Elapsed time = 738.0 millsec
+(6007200, 300)
+Elapsed time = 701.0 millsec
+(6007200, 300)
+Elapsed time = 731.0 millsec
+(6007200, 300)
+Elapsed time = 598.0 millsec
+(6007200, 300)
+Elapsed time = 682.0 millsec
+SystemDS Statistics:
+Total elapsed time:		7.709 sec.
+Total compilation time:		0.569 sec.
+Total execution time:		7.140 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.354/0.000/0.002/0.056 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.025 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	152.098 sec.
+	WordEmbedding apply time:	152.098 sec.
+TransformEncode PreProc. time:	0.089 sec.
+TransformEncode PostProc. time:	0.770 sec.
+Total JIT compile time:		5.873 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.014 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    4.652      6
+  2  rightIndex        2.325      3
+  3  write             0.056      1
+  4  ncol              0.031      7
+  5  time              0.016     14
+  6  toString          0.007      3
+  7  floor             0.005      6
+  8  <                 0.005      7
+  9  rand              0.004      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_4800.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/4.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+bed
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(24028800, 300)
+Elapsed time = 3006.0 millsec
+(24028800, 300)
+Elapsed time = 2369.0 millsec
+(24028800, 300)
+Elapsed time = 2445.0 millsec
+(24028800, 300)
+Elapsed time = 2453.0 millsec
+(24028800, 300)
+Elapsed time = 2183.0 millsec
+(24028800, 300)
+Elapsed time = 2225.0 millsec
+SystemDS Statistics:
+Total elapsed time:		18.918 sec.
+Total compilation time:		0.520 sec.
+Total execution time:		18.399 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	3.611/0.000/0.002/0.050 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.024 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	36.341 sec.
+	WordEmbedding apply time:	36.341 sec.
+TransformEncode PreProc. time:	0.305 sec.
+TransformEncode PostProc. time:	2.371 sec.
+Total JIT compile time:		5.879 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.019 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   14.664      6
+  2  rightIndex        3.585      3
+  3  write             0.050      1
+  4  ncol              0.029      7
+  5  time              0.017     14
+  6  toString          0.006      3
+  7  floor             0.005      6
+  8  <                 0.003      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target4/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_4800.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/5.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+bed
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2608.0 millsec
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2730.0 millsec
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2554.0 millsec
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2491.0 millsec
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2535.0 millsec
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2456.0 millsec
+SystemDS Statistics:
+Total elapsed time:		19.849 sec.
+Total compilation time:		0.616 sec.
+Total execution time:		19.233 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	3.761/0.004/0.002/0.047 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.022 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	582.481 sec.
+	WordEmbedding apply time:	582.481 sec.
+TransformEncode PreProc. time:	0.273 sec.
+TransformEncode PostProc. time:	2.041 sec.
+Total JIT compile time:		5.584 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.019 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   15.359      6
+  2  rightIndex        3.732      3
+  3  write             0.047      1
+  4  ncol              0.031      7
+  5  time              0.014     14
+  6  toString          0.006      3
+  7  rand              0.004      1
+  8  <                 0.003      7
+  9  floor             0.003      6
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target56/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_4800.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/6.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+bed
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(24028800, 300)
+Elapsed time = 2585.0 millsec
+(24028800, 300)
+Elapsed time = 2403.0 millsec
+(24028800, 300)
+Elapsed time = 2714.0 millsec
+(24028800, 300)
+Elapsed time = 2371.0 millsec
+(24028800, 300)
+Elapsed time = 2545.0 millsec
+(24028800, 300)
+Elapsed time = 2319.0 millsec
+SystemDS Statistics:
+Total elapsed time:		19.492 sec.
+Total compilation time:		0.600 sec.
+Total execution time:		18.892 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	3.863/0.000/0.002/0.040 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.025 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	510.521 sec.
+	WordEmbedding apply time:	510.521 sec.
+TransformEncode PreProc. time:	0.309 sec.
+TransformEncode PostProc. time:	2.865 sec.
+Total JIT compile time:		5.926 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.012 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   14.917      6
+  2  rightIndex        3.837      3
+  3  write             0.041      1
+  4  ncol              0.029      7
+  5  time              0.015     14
+  6  toString          0.006      3
+  7  <                 0.004      7
+  8  rand              0.003      1
+  9  floor             0.003      6
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_18400.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/7.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+never
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(92110400, 300)
+Elapsed time = 7649.0 millsec
+(92110400, 300)
+Elapsed time = 9614.0 millsec
+(92110400, 300)
+Elapsed time = 8194.0 millsec
+(92110400, 300)
+Elapsed time = 8172.0 millsec
+(92110400, 300)
+Elapsed time = 7713.0 millsec
+(92110400, 300)
+Elapsed time = 8534.0 millsec
+SystemDS Statistics:
+Total elapsed time:		59.551 sec.
+Total compilation time:		0.585 sec.
+Total execution time:		58.966 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	8.995/0.000/0.002/0.045 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.020 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	154.902 sec.
+	WordEmbedding apply time:	154.902 sec.
+TransformEncode PreProc. time:	0.967 sec.
+TransformEncode PostProc. time:	10.207 sec.
+Total JIT compile time:		8.35 sec.
+Total JVM GC count:		2.
+Total JVM GC time:		2.314 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   49.862      6
+  2  rightIndex        8.973      3
+  3  write             0.046      1
+  4  ncol              0.025      7
+  5  time              0.017     14
+  6  toString          0.006      3
+  7  floor             0.003      6
+  8  <                 0.003      7
+  9  rand              0.002      1
+ 10  rmvar             0.001     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target4/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_18400.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/8.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+never
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 7583.0 millsec
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 9008.0 millsec
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 9182.0 millsec
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 10162.0 millsec
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 8988.0 millsec
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 9315.0 millsec
+SystemDS Statistics:
+Total elapsed time:		63.514 sec.
+Total compilation time:		0.576 sec.
+Total execution time:		62.939 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	8.607/0.004/0.002/0.041 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.022 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	1941.126 sec.
+	WordEmbedding apply time:	1941.126 sec.
+TransformEncode PreProc. time:	0.961 sec.
+TransformEncode PostProc. time:	9.139 sec.
+Total JIT compile time:		6.105 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.019 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   54.223      6
+  2  rightIndex        8.581      3
+  3  write             0.041      1
+  4  ncol              0.029      7
+  5  time              0.015     14
+  6  toString          0.008      3
+  7  <                 0.003      7
+  8  rand              0.003      1
+  9  floor             0.003      6
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target56/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_18400.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/9.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+never
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(92110400, 300)
+Elapsed time = 7690.0 millsec
+(92110400, 300)
+Elapsed time = 7626.0 millsec
+(92110400, 300)
+Elapsed time = 8163.0 millsec
+(92110400, 300)
+Elapsed time = 8726.0 millsec
+(92110400, 300)
+Elapsed time = 8017.0 millsec
+(92110400, 300)
+Elapsed time = 7331.0 millsec
+SystemDS Statistics:
+Total elapsed time:		57.033 sec.
+Total compilation time:		0.585 sec.
+Total execution time:		56.448 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	8.792/0.000/0.002/0.049 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.021 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	1647.562 sec.
+	WordEmbedding apply time:	1647.562 sec.
+TransformEncode PreProc. time:	0.976 sec.
+TransformEncode PostProc. time:	9.273 sec.
+Total JIT compile time:		6.559 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.014 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   47.538      6
+  2  rightIndex        8.766      3
+  3  write             0.049      1
+  4  ncol              0.029      7
+  5  time              0.016     14
+  6  toString          0.006      3
+  7  <                 0.004      7
+  8  rand              0.004      1
+  9  floor             0.003      6
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_36800.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/10.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+looked
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(184220800, 300)
+Elapsed time = 15528.0 millsec
+(184220800, 300)
+Elapsed time = 14429.0 millsec
+(184220800, 300)
+Elapsed time = 14093.0 millsec
+(184220800, 300)
+Elapsed time = 16293.0 millsec
+(184220800, 300)
+Elapsed time = 14584.0 millsec
+(184220800, 300)
+Elapsed time = 15302.0 millsec
+SystemDS Statistics:
+Total elapsed time:		107.021 sec.
+Total compilation time:		0.584 sec.
+Total execution time:		106.437 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	16.099/0.000/0.002/0.053 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.021 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	132.403 sec.
+	WordEmbedding apply time:	132.403 sec.
+TransformEncode PreProc. time:	1.981 sec.
+TransformEncode PostProc. time:	19.595 sec.
+Total JIT compile time:		7.786 sec.
+Total JVM GC count:		3.
+Total JVM GC time:		2.798 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   90.214      6
+  2  rightIndex       16.070      3
+  3  write             0.053      1
+  4  ncol              0.032      7
+  5  time              0.018     14
+  6  toString          0.006      3
+  7  <                 0.004      7
+  8  rand              0.004      1
+  9  floor             0.003      6
+ 10  rmvar             0.001     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target4/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_36800.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/11.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+looked
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 15405.0 millsec
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 19186.0 millsec
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 17736.0 millsec
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 17153.0 millsec
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 18538.0 millsec
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 19326.0 millsec
+SystemDS Statistics:
+Total elapsed time:		124.015 sec.
+Total compilation time:		0.608 sec.
+Total execution time:		123.406 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	15.962/0.004/0.002/0.050 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.021 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	3787.749 sec.
+	WordEmbedding apply time:	3787.749 sec.
+TransformEncode PreProc. time:	1.870 sec.
+TransformEncode PostProc. time:	18.987 sec.
+Total JIT compile time:		6.136 sec.
+Total JVM GC count:		2.
+Total JVM GC time:		1.704 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply  107.330      6
+  2  rightIndex       15.941      3
+  3  write             0.050      1
+  4  ncol              0.024      7
+  5  time              0.016     14
+  6  toString          0.006      3
+  7  <                 0.003      7
+  8  floor             0.003      6
+  9  rand              0.002      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target56/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_36800.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results-test-n-multi-threaded-versions/12.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+looked
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(184220800, 300)
+Elapsed time = 14002.0 millsec
+(184220800, 300)
+Elapsed time = 16675.0 millsec
+(184220800, 300)
+Elapsed time = 17314.0 millsec
+(184220800, 300)
+Elapsed time = 19515.0 millsec
+(184220800, 300)
+Elapsed time = 17229.0 millsec
+(184220800, 300)
+Elapsed time = 16778.0 millsec
+SystemDS Statistics:
+Total elapsed time:		118.576 sec.
+Total compilation time:		0.545 sec.
+Total execution time:		118.030 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	16.417/0.000/0.002/0.045 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.022 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	3515.566 sec.
+	WordEmbedding apply time:	3515.566 sec.
+TransformEncode PreProc. time:	2.026 sec.
+TransformEncode PostProc. time:	18.463 sec.
+Total JIT compile time:		5.675 sec.
+Total JVM GC count:		2.
+Total JVM GC time:		1.693 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply  101.498      6
+  2  rightIndex       16.394      3
+  3  write             0.045      1
+  4  ncol              0.027      7
+  5  time              0.015     14
+  6  toString          0.009      3
+  7  <                 0.003      7
+  8  rand              0.003      1
+  9  floor             0.003      6
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_100.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-multi-threaded-versions/1.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+universalist
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(5006800, 300)
+Elapsed time = 2384.0 millsec
+(5006800, 300)
+Elapsed time = 1790.0 millsec
+(5006800, 300)
+Elapsed time = 1801.0 millsec
+(5006800, 300)
+Elapsed time = 2130.0 millsec
+(5006800, 300)
+Elapsed time = 1556.0 millsec
+(5006800, 300)
+Elapsed time = 1548.0 millsec
+SystemDS Statistics:
+Total elapsed time:		14.230 sec.
+Total compilation time:		0.545 sec.
+Total execution time:		13.686 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.352/0.000/0.002/0.051 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.037 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	98.271 sec.
+	WordEmbedding apply time:	98.271 sec.
+TransformEncode PreProc. time:	0.088 sec.
+TransformEncode PostProc. time:	1.370 sec.
+Total JIT compile time:		6.867 sec.
+Total JVM GC count:		2.
+Total JVM GC time:		0.469 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   11.185      6
+  2  rightIndex        2.319      3
+  3  write             0.051      1
+  4  ncol              0.036      7
+  5  time              0.022     14
+  6  toString          0.008      3
+  7  floor             0.005      6
+  8  <                 0.004      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target4/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_100.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-multi-threaded-versions/2.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+universalist
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+(5006800, 300)
+Elapsed time = 1111.0 millsec
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+(5006800, 300)
+Elapsed time = 762.0 millsec
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+(5006800, 300)
+Elapsed time = 713.0 millsec
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+(5006800, 300)
+Elapsed time = 726.0 millsec
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+(5006800, 300)
+Elapsed time = 842.0 millsec
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+prolly skipped evictions ;)     4.0054552E7 vs 12016320152
+(5006800, 300)
+Elapsed time = 831.0 millsec
+SystemDS Statistics:
+Total elapsed time:		8.517 sec.
+Total compilation time:		0.589 sec.
+Total execution time:		7.928 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.837/0.005/0.003/0.051 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.027 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	148.283 sec.
+	WordEmbedding apply time:	148.283 sec.
+TransformEncode PreProc. time:	0.078 sec.
+TransformEncode PostProc. time:	1.350 sec.
+Total JIT compile time:		7.623 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.02 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    4.963      6
+  2  rightIndex        2.813      3
+  3  write             0.051      1
+  4  ncol              0.027      7
+  5  time              0.014     14
+  6  toString          0.008      3
+  7  floor             0.005      6
+  8  <                 0.004      7
+  9  rand              0.004      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target5/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_100.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-multi-threaded-versions/3.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+universalist
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(5006800, 300)
+Elapsed time = 2300.0 millsec
+(5006800, 300)
+Elapsed time = 1792.0 millsec
+(5006800, 300)
+Elapsed time = 1794.0 millsec
+(5006800, 300)
+Elapsed time = 2107.0 millsec
+(5006800, 300)
+Elapsed time = 1615.0 millsec
+(5006800, 300)
+Elapsed time = 1568.0 millsec
+SystemDS Statistics:
+Total elapsed time:		14.606 sec.
+Total compilation time:		0.588 sec.
+Total execution time:		14.018 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.732/0.000/0.002/0.051 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.030 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	98.459 sec.
+	WordEmbedding apply time:	98.459 sec.
+TransformEncode PreProc. time:	0.090 sec.
+TransformEncode PostProc. time:	1.341 sec.
+Total JIT compile time:		7.16 sec.
+Total JVM GC count:		2.
+Total JVM GC time:		0.455 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   11.151      6
+  2  rightIndex        2.700      3
+  3  write             0.051      1
+  4  ncol              0.036      7
+  5  time              0.015     14
+  6  toString          0.007      3
+  7  floor             0.005      6
+  8  <                 0.004      7
+  9  rand              0.003      1
+ 10  +                 0.002     42
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_300.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-multi-threaded-versions/4.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+echl
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(15020400, 300)
+Elapsed time = 3998.0 millsec
+(15020400, 300)
+Elapsed time = 3535.0 millsec
+(15020400, 300)
+Elapsed time = 3595.0 millsec
+(15020400, 300)
+Elapsed time = 3184.0 millsec
+(15020400, 300)
+Elapsed time = 3231.0 millsec
+(15020400, 300)
+Elapsed time = 3645.0 millsec
+SystemDS Statistics:
+Total elapsed time:		25.047 sec.
+Total compilation time:		0.541 sec.
+Total execution time:		24.505 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	3.202/0.000/0.002/0.053 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.027 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	151.592 sec.
+	WordEmbedding apply time:	151.592 sec.
+TransformEncode PreProc. time:	0.222 sec.
+TransformEncode PostProc. time:	3.275 sec.
+Total JIT compile time:		6.957 sec.
+Total JVM GC count:		3.
+Total JVM GC time:		1.119 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   21.165      6
+  2  rightIndex        3.172      3
+  3  write             0.053      1
+  4  ncol              0.033      7
+  5  time              0.016     14
+  6  toString          0.008      3
+  7  rand              0.005      1
+  8  floor             0.005      6
+  9  <                 0.004      7
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target4/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_300.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-multi-threaded-versions/5.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+echl
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+(15020400, 300)
+Elapsed time = 2294.0 millsec
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+(15020400, 300)
+Elapsed time = 1646.0 millsec
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+(15020400, 300)
+Elapsed time = 1905.0 millsec
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+(15020400, 300)
+Elapsed time = 1903.0 millsec
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+(15020400, 300)
+Elapsed time = 1867.0 millsec
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+prolly skipped evictions ;)     1.20163352E8 vs 36048960152
+(15020400, 300)
+Elapsed time = 2101.0 millsec
+SystemDS Statistics:
+Total elapsed time:		15.628 sec.
+Total compilation time:		0.583 sec.
+Total execution time:		15.045 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	3.230/0.004/0.002/0.049 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.022 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	365.802 sec.
+	WordEmbedding apply time:	365.802 sec.
+TransformEncode PreProc. time:	0.178 sec.
+TransformEncode PostProc. time:	2.801 sec.
+Total JIT compile time:		6.713 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.018 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   11.700      6
+  2  rightIndex        3.201      3
+  3  write             0.049      1
+  4  ncol              0.031      7
+  5  time              0.014     14
+  6  toString          0.007      3
+  7  floor             0.004      6
+  8  <                 0.003      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target5/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_300.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-multi-threaded-versions/6.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+echl
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(15020400, 300)
+Elapsed time = 4056.0 millsec
+(15020400, 300)
+Elapsed time = 3505.0 millsec
+(15020400, 300)
+Elapsed time = 4034.0 millsec
+(15020400, 300)
+Elapsed time = 3162.0 millsec
+(15020400, 300)
+Elapsed time = 3259.0 millsec
+(15020400, 300)
+Elapsed time = 3679.0 millsec
+SystemDS Statistics:
+Total elapsed time:		25.783 sec.
+Total compilation time:		0.564 sec.
+Total execution time:		25.219 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	3.423/0.000/0.002/0.044 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.027 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	194.084 sec.
+	WordEmbedding apply time:	194.084 sec.
+TransformEncode PreProc. time:	0.214 sec.
+TransformEncode PostProc. time:	2.740 sec.
+Total JIT compile time:		6.63 sec.
+Total JVM GC count:		3.
+Total JVM GC time:		2.021 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   21.673      6
+  2  rightIndex        3.388      3
+  3  write             0.044      1
+  4  ncol              0.039      7
+  5  time              0.015     14
+  6  toString          0.007      3
+  7  floor             0.005      6
+  8  <                 0.005      7
+  9  rand              0.003      1
+ 10  +                 0.002     42
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_600.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-multi-threaded-versions/7.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+jukebox
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(30040800, 300)
+Elapsed time = 5433.0 millsec
+(30040800, 300)
+Elapsed time = 6517.0 millsec
+(30040800, 300)
+Elapsed time = 4840.0 millsec
+(30040800, 300)
+Elapsed time = 4876.0 millsec
+(30040800, 300)
+Elapsed time = 4407.0 millsec
+(30040800, 300)
+Elapsed time = 4677.0 millsec
+SystemDS Statistics:
+Total elapsed time:		35.849 sec.
+Total compilation time:		0.543 sec.
+Total execution time:		35.306 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	4.459/0.000/0.002/0.045 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.021 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	264.130 sec.
+	WordEmbedding apply time:	264.130 sec.
+TransformEncode PreProc. time:	0.323 sec.
+TransformEncode PostProc. time:	4.142 sec.
+Total JIT compile time:		6.892 sec.
+Total JVM GC count:		3.
+Total JVM GC time:		3.196 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   30.735      6
+  2  rightIndex        4.413      3
+  3  ncol              0.048      7
+  4  write             0.045      1
+  5  time              0.015     14
+  6  toString          0.007      3
+  7  <                 0.004      7
+  8  floor             0.003      6
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target4/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_600.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-multi-threaded-versions/8.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+jukebox
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+(30040800, 300)
+Elapsed time = 3847.0 millsec
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+(30040800, 300)
+Elapsed time = 4055.0 millsec
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+(30040800, 300)
+Elapsed time = 3738.0 millsec
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+(30040800, 300)
+Elapsed time = 3585.0 millsec
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+(30040800, 300)
+Elapsed time = 3967.0 millsec
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+prolly skipped evictions ;)     2.40326552E8 vs 72097920152
+(30040800, 300)
+Elapsed time = 3461.0 millsec
+SystemDS Statistics:
+Total elapsed time:		27.906 sec.
+Total compilation time:		0.547 sec.
+Total execution time:		27.360 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	4.615/0.004/0.002/0.040 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.023 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	714.826 sec.
+	WordEmbedding apply time:	714.826 sec.
+TransformEncode PreProc. time:	0.366 sec.
+TransformEncode PostProc. time:	5.312 sec.
+Total JIT compile time:		6.273 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.016 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   22.637      6
+  2  rightIndex        4.586      3
+  3  write             0.040      1
+  4  ncol              0.032      7
+  5  time              0.014     14
+  6  toString          0.006      3
+  7  floor             0.004      6
+  8  <                 0.003      7
+  9  rand              0.003      1
+ 10  rmvar             0.001     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target5/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_600.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-multi-threaded-versions/9.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+jukebox
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(30040800, 300)
+Elapsed time = 5476.0 millsec
+(30040800, 300)
+Elapsed time = 6575.0 millsec
+(30040800, 300)
+Elapsed time = 4497.0 millsec
+(30040800, 300)
+Elapsed time = 4624.0 millsec
+(30040800, 300)
+Elapsed time = 4603.0 millsec
+(30040800, 300)
+Elapsed time = 4842.0 millsec
+SystemDS Statistics:
+Total elapsed time:		35.701 sec.
+Total compilation time:		0.559 sec.
+Total execution time:		35.142 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	4.429/0.000/0.002/0.045 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.021 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	257.828 sec.
+	WordEmbedding apply time:	257.828 sec.
+TransformEncode PreProc. time:	0.346 sec.
+TransformEncode PostProc. time:	4.076 sec.
+Total JIT compile time:		6.461 sec.
+Total JVM GC count:		3.
+Total JVM GC time:		3.084 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   30.601      6
+  2  rightIndex        4.399      3
+  3  write             0.045      1
+  4  ncol              0.033      7
+  5  time              0.013     14
+  6  toString          0.006      3
+  7  <                 0.004      7
+  8  rand              0.004      1
+  9  floor             0.003      6
+ 10  rmvar             0.001     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_1200.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-multi-threaded-versions/10.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+budget
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(60081600, 300)
+Elapsed time = 10796.0 millsec
+(60081600, 300)
+Elapsed time = 8398.0 millsec
+(60081600, 300)
+Elapsed time = 7886.0 millsec
+(60081600, 300)
+Elapsed time = 7289.0 millsec
+(60081600, 300)
+Elapsed time = 8045.0 millsec
+(60081600, 300)
+Elapsed time = 7770.0 millsec
+SystemDS Statistics:
+Total elapsed time:		57.541 sec.
+Total compilation time:		0.503 sec.
+Total execution time:		57.038 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	6.761/0.000/0.002/0.043 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.022 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	318.029 sec.
+	WordEmbedding apply time:	318.029 sec.
+TransformEncode PreProc. time:	0.651 sec.
+TransformEncode PostProc. time:	9.207 sec.
+Total JIT compile time:		6.597 sec.
+Total JVM GC count:		3.
+Total JVM GC time:		3.783 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   50.169      6
+  2  rightIndex        6.734      3
+  3  write             0.043      1
+  4  ncol              0.030      7
+  5  time              0.012     14
+  6  toString          0.007      3
+  7  <                 0.004      7
+  8  floor             0.003      6
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target4/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_1200.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-multi-threaded-versions/11.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+budget
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+(60081600, 300)
+Elapsed time = 7565.0 millsec
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+(60081600, 300)
+Elapsed time = 6905.0 millsec
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+(60081600, 300)
+Elapsed time = 7242.0 millsec
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+(60081600, 300)
+Elapsed time = 7028.0 millsec
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+(60081600, 300)
+Elapsed time = 6908.0 millsec
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+prolly skipped evictions ;)     4.80652952E8 vs 144195840152
+(60081600, 300)
+Elapsed time = 7361.0 millsec
+SystemDS Statistics:
+Total elapsed time:		50.728 sec.
+Total compilation time:		0.558 sec.
+Total execution time:		50.170 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	7.064/0.004/0.002/0.046 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.023 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	1302.077 sec.
+	WordEmbedding apply time:	1302.077 sec.
+TransformEncode PreProc. time:	0.689 sec.
+TransformEncode PostProc. time:	10.866 sec.
+Total JIT compile time:		6.951 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.012 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   42.992      6
+  2  rightIndex        7.033      3
+  3  write             0.046      1
+  4  ncol              0.034      7
+  5  time              0.015     14
+  6  toString          0.007      3
+  7  floor             0.003      6
+  8  <                 0.003      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target5/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_1200.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-multi-threaded-versions/12.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+budget
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(60081600, 300)
+Elapsed time = 8637.0 millsec
+(60081600, 300)
+Elapsed time = 7963.0 millsec
+(60081600, 300)
+Elapsed time = 8240.0 millsec
+(60081600, 300)
+Elapsed time = 8544.0 millsec
+(60081600, 300)
+Elapsed time = 8303.0 millsec
+(60081600, 300)
+Elapsed time = 7977.0 millsec
+SystemDS Statistics:
+Total elapsed time:		56.848 sec.
+Total compilation time:		0.508 sec.
+Total execution time:		56.340 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	6.581/0.000/0.002/0.044 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.021 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	172.805 sec.
+	WordEmbedding apply time:	172.805 sec.
+TransformEncode PreProc. time:	0.618 sec.
+TransformEncode PostProc. time:	11.106 sec.
+Total JIT compile time:		7.111 sec.
+Total JVM GC count:		3.
+Total JVM GC time:		1.553 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   49.649      6
+  2  rightIndex        6.550      3
+  3  write             0.044      1
+  4  ncol              0.035      7
+  5  time              0.016     14
+  6  toString          0.006      3
+  7  floor             0.003      6
+  8  <                 0.002      7
+  9  rand              0.002      1
+ 10  rmvar             0.001     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_2400.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-multi-threaded-versions/13.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+tabriz
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(120163200, 300)
+Elapsed time = 13974.0 millsec
+(120163200, 300)
+Elapsed time = 13725.0 millsec
+(120163200, 300)
+Elapsed time = 13135.0 millsec
+(120163200, 300)
+Elapsed time = 13599.0 millsec
+(120163200, 300)
+Elapsed time = 14469.0 millsec
+(120163200, 300)
+Elapsed time = 13071.0 millsec
+SystemDS Statistics:
+Total elapsed time:		95.163 sec.
+Total compilation time:		0.524 sec.
+Total execution time:		94.639 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	12.569/0.000/0.002/0.039 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.021 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	254.314 sec.
+	WordEmbedding apply time:	254.314 sec.
+TransformEncode PreProc. time:	1.274 sec.
+TransformEncode PostProc. time:	18.018 sec.
+Total JIT compile time:		7.225 sec.
+Total JVM GC count:		4.
+Total JVM GC time:		3.754 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   81.960      6
+  2  rightIndex       12.535      3
+  3  write             0.039      1
+  4  ncol              0.037      7
+  5  time              0.020     14
+  6  toString          0.006      3
+  7  <                 0.004      7
+  8  rand              0.003      1
+  9  floor             0.003      6
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target4/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_2400.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-multi-threaded-versions/14.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+tabriz
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+(120163200, 300)
+Elapsed time = 12473.0 millsec
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+(120163200, 300)
+Elapsed time = 11715.0 millsec
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+(120163200, 300)
+Elapsed time = 15118.0 millsec
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+(120163200, 300)
+Elapsed time = 12406.0 millsec
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+(120163200, 300)
+Elapsed time = 11889.0 millsec
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+prolly skipped evictions ;)     9.61305752E8 vs 288391680152
+(120163200, 300)
+Elapsed time = 11926.0 millsec
+SystemDS Statistics:
+Total elapsed time:		88.090 sec.
+Total compilation time:		0.581 sec.
+Total execution time:		87.509 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	11.889/0.003/0.002/0.041 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.020 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	2274.329 sec.
+	WordEmbedding apply time:	2274.329 sec.
+TransformEncode PreProc. time:	1.201 sec.
+TransformEncode PostProc. time:	18.535 sec.
+Total JIT compile time:		6.216 sec.
+Total JVM GC count:		2.
+Total JVM GC time:		1.368 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   75.515      6
+  2  rightIndex       11.862      3
+  3  write             0.041      1
+  4  ncol              0.030      7
+  5  time              0.016     14
+  6  toString          0.007      3
+  7  <                 0.003      7
+  8  rand              0.003      1
+  9  floor             0.003      6
+ 10  rmvar             0.001     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target5/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_2400.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-multi-threaded-versions/15.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+tabriz
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(120163200, 300)
+Elapsed time = 14581.0 millsec
+(120163200, 300)
+Elapsed time = 15112.0 millsec
+(120163200, 300)
+Elapsed time = 13445.0 millsec
+(120163200, 300)
+Elapsed time = 14028.0 millsec
+(120163200, 300)
+Elapsed time = 14350.0 millsec
+(120163200, 300)
+Elapsed time = 14690.0 millsec
+SystemDS Statistics:
+Total elapsed time:		98.178 sec.
+Total compilation time:		0.597 sec.
+Total execution time:		97.581 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	11.281/0.000/0.002/0.044 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.020 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	348.928 sec.
+	WordEmbedding apply time:	348.928 sec.
+TransformEncode PreProc. time:	1.198 sec.
+TransformEncode PostProc. time:	18.875 sec.
+Total JIT compile time:		6.307 sec.
+Total JVM GC count:		4.
+Total JVM GC time:		4.477 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   86.193      6
+  2  rightIndex       11.259      3
+  3  write             0.044      1
+  4  ncol              0.025      7
+  5  time              0.015     14
+  6  toString          0.006      3
+  7  <                 0.003      7
+  8  rand              0.003      1
+  9  floor             0.003      6
+ 10  rmvar             0.001     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_4800.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-multi-threaded-versions/16.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+sakamoto
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(240326400, 300)
+Elapsed time = 25133.0 millsec
+(240326400, 300)
+Elapsed time = 24145.0 millsec
+(240326400, 300)
+Elapsed time = 25422.0 millsec
+(240326400, 300)
+Elapsed time = 24647.0 millsec
+(240326400, 300)
+Elapsed time = 25165.0 millsec
+(240326400, 300)
+Elapsed time = 25255.0 millsec
+SystemDS Statistics:
+Total elapsed time:		171.076 sec.
+Total compilation time:		0.576 sec.
+Total execution time:		170.500 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	20.643/0.000/0.002/0.044 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.018 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	502.818 sec.
+	WordEmbedding apply time:	502.818 sec.
+TransformEncode PreProc. time:	2.528 sec.
+TransformEncode PostProc. time:	32.388 sec.
+Total JIT compile time:		8.59 sec.
+Total JVM GC count:		5.
+Total JVM GC time:		4.296 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply  149.753      6
+  2  rightIndex       20.612      3
+  3  write             0.044      1
+  4  ncol              0.034      7
+  5  time              0.013     14
+  6  toString          0.006      3
+  7  rand              0.003      1
+  8  <                 0.003      7
+  9  floor             0.003      6
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target4/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_4800.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-multi-threaded-versions/17.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+sakamoto
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+(240326400, 300)
+Elapsed time = 26633.0 millsec
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+(240326400, 300)
+Elapsed time = 23510.0 millsec
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+(240326400, 300)
+Elapsed time = 22694.0 millsec
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+(240326400, 300)
+Elapsed time = 23729.0 millsec
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+(240326400, 300)
+Elapsed time = 27629.0 millsec
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+prolly skipped evictions ;)     1.922611352E9 vs 576783360152
+(240326400, 300)
+Elapsed time = 23430.0 millsec
+SystemDS Statistics:
+Total elapsed time:		168.518 sec.
+Total compilation time:		0.603 sec.
+Total execution time:		167.914 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	20.199/0.003/0.002/0.042 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.020 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	4515.187 sec.
+	WordEmbedding apply time:	4515.187 sec.
+TransformEncode PreProc. time:	2.986 sec.
+TransformEncode PostProc. time:	32.368 sec.
+Total JIT compile time:		6.915 sec.
+Total JVM GC count:		3.
+Total JVM GC time:		1.855 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply  147.610      6
+  2  rightIndex       20.172      3
+  3  write             0.043      1
+  4  ncol              0.030      7
+  5  time              0.012     14
+  6  toString          0.006      3
+  7  <                 0.004      7
+  8  rand              0.004      1
+  9  floor             0.003      6
+ 10  rmvar             0.001     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target5/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_4800.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-multi-threaded-versions/18.csv
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+sakamoto
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(240326400, 300)
+Elapsed time = 24934.0 millsec
+(240326400, 300)
+Elapsed time = 24054.0 millsec
+(240326400, 300)
+Elapsed time = 24294.0 millsec
+(240326400, 300)
+Elapsed time = 25997.0 millsec
+(240326400, 300)
+Elapsed time = 24328.0 millsec
+(240326400, 300)
+Elapsed time = 25998.0 millsec
+SystemDS Statistics:
+Total elapsed time:		168.851 sec.
+Total compilation time:		0.603 sec.
+Total execution time:		168.248 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	18.535/0.000/0.002/0.053 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.021 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	464.225 sec.
+	WordEmbedding apply time:	464.225 sec.
+TransformEncode PreProc. time:	2.660 sec.
+TransformEncode PostProc. time:	30.119 sec.
+Total JIT compile time:		6.848 sec.
+Total JVM GC count:		6.
+Total JVM GC time:		3.661 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply  149.590      6
+  2  rightIndex       18.509      3
+  3  write             0.054      1
+  4  ncol              0.029      7
+  5  time              0.015     14
+  6  toString          0.007      3
+  7  floor             0.005      6
+  8  <                 0.003      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+

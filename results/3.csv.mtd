@@ -1,12 +1,12 @@
 {
     "data_type": "matrix",
     "value_type": "double",
-    "rows": 9,
+    "rows": 6,
     "cols": 1,
-    "nnz": 9,
+    "nnz": 6,
     "format": "csv",
-    "author": "eliasstrauss",
+    "author": "elias",
     "header": false,
     "sep": ",",
-    "created": "2023-05-30 20:36:21 CEST"
+    "created": "2023-06-28 07:57:07 UTC"
 }

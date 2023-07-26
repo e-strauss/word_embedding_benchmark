@@ -1,0 +1,1363 @@
+java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_1200.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results/1.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+offensive
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 1518.0 millsec
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 885.0 millsec
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 856.0 millsec
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 812.0 millsec
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 846.0 millsec
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+prolly skipped evictions ;)     6.0232344E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 806.0 millsec
+SystemDS Statistics:
+Total elapsed time:		8.834 sec.
+Total compilation time:		0.577 sec.
+Total execution time:		8.257 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.427/0.005/0.003/0.053 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.029 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	44.679 sec.
+	WordEmbedding apply time:	44.679 sec.
+TransformEncode PreProc. time:	0.106 sec.
+TransformEncode PostProc. time:	0.866 sec.
+Total JIT compile time:		7.299 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.023 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    5.702      6
+  2  rightIndex        2.387      3
+  3  write             0.053      1
+  4  ncol              0.043      7
+  5  time              0.014     14
+  6  toString          0.007      3
+  7  floor             0.005      6
+  8  <                 0.004      7
+  9  rand              0.002      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target4/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_1200.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results/2.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+offensive
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 986.0 millsec
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 1070.0 millsec
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 741.0 millsec
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 967.0 millsec
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 807.0 millsec
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+prolly skipped evictions ;)     4.8057752E7 vs 14417280152
+(6007200, 300)
+Elapsed time = 752.0 millsec
+SystemDS Statistics:
+Total elapsed time:		8.268 sec.
+Total compilation time:		0.622 sec.
+Total execution time:		7.646 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.221/0.005/0.003/0.048 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.024 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	187.798 sec.
+	WordEmbedding apply time:	187.798 sec.
+TransformEncode PreProc. time:	0.105 sec.
+TransformEncode PostProc. time:	0.861 sec.
+Total JIT compile time:		6.457 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.023 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    5.304      6
+  2  rightIndex        2.191      3
+  3  write             0.048      1
+  4  ncol              0.032      7
+  5  time              0.013     14
+  6  toString          0.007      3
+  7  floor             0.005      6
+  8  <                 0.004      7
+  9  rand              0.004      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target5/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_1200.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results/3.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+offensive
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(6007200, 300)
+Elapsed time = 1060.0 millsec
+(6007200, 300)
+Elapsed time = 659.0 millsec
+(6007200, 300)
+Elapsed time = 670.0 millsec
+(6007200, 300)
+Elapsed time = 697.0 millsec
+(6007200, 300)
+Elapsed time = 680.0 millsec
+(6007200, 300)
+Elapsed time = 670.0 millsec
+SystemDS Statistics:
+Total elapsed time:		7.280 sec.
+Total compilation time:		0.625 sec.
+Total execution time:		6.654 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.117/0.000/0.002/0.049 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.025 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	8.427 sec.
+	WordEmbedding apply time:	8.427 sec.
+TransformEncode PreProc. time:	0.104 sec.
+TransformEncode PostProc. time:	0.795 sec.
+Total JIT compile time:		5.837 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.021 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    4.416      6
+  2  rightIndex        2.086      3
+  3  write             0.049      1
+  4  ncol              0.033      7
+  5  time              0.012     14
+  6  toString          0.008      3
+  7  floor             0.005      6
+  8  <                 0.004      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_2400.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results/4.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+controversy
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+(12014400, 300)
+Elapsed time = 2294.0 millsec
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+(12014400, 300)
+Elapsed time = 1519.0 millsec
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+(12014400, 300)
+Elapsed time = 1428.0 millsec
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+(12014400, 300)
+Elapsed time = 1653.0 millsec
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+(12014400, 300)
+Elapsed time = 1607.0 millsec
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+prolly skipped evictions ;)     1.08289944E8 vs 28834560152
+(12014400, 300)
+Elapsed time = 1670.0 millsec
+SystemDS Statistics:
+Total elapsed time:		13.518 sec.
+Total compilation time:		0.564 sec.
+Total execution time:		12.954 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.675/0.004/0.003/0.051 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.027 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	57.266 sec.
+	WordEmbedding apply time:	57.266 sec.
+TransformEncode PreProc. time:	0.189 sec.
+TransformEncode PostProc. time:	1.675 sec.
+Total JIT compile time:		6.533 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.014 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   10.153      6
+  2  rightIndex        2.632      3
+  3  write             0.051      1
+  4  ncol              0.046      7
+  5  time              0.016     14
+  6  toString          0.006      3
+  7  floor             0.004      6
+  8  <                 0.003      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target4/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_2400.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results/5.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+controversy
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+(12014400, 300)
+Elapsed time = 1601.0 millsec
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+(12014400, 300)
+Elapsed time = 1608.0 millsec
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+(12014400, 300)
+Elapsed time = 1301.0 millsec
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+(12014400, 300)
+Elapsed time = 1603.0 millsec
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+(12014400, 300)
+Elapsed time = 1371.0 millsec
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+prolly skipped evictions ;)     9.6115352E7 vs 28834560152
+(12014400, 300)
+Elapsed time = 1744.0 millsec
+SystemDS Statistics:
+Total elapsed time:		12.735 sec.
+Total compilation time:		0.550 sec.
+Total execution time:		12.185 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.849/0.005/0.003/0.051 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.027 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	314.845 sec.
+	WordEmbedding apply time:	314.845 sec.
+TransformEncode PreProc. time:	0.188 sec.
+TransformEncode PostProc. time:	1.840 sec.
+Total JIT compile time:		5.655 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.02 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    9.208      6
+  2  rightIndex        2.821      3
+  3  write             0.051      1
+  4  ncol              0.032      7
+  5  time              0.016     14
+  6  toString          0.007      3
+  7  floor             0.004      6
+  8  <                 0.004      7
+  9  rand              0.004      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target5/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_2400.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results/6.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+controversy
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(12014400, 300)
+Elapsed time = 1663.0 millsec
+(12014400, 300)
+Elapsed time = 1278.0 millsec
+(12014400, 300)
+Elapsed time = 1342.0 millsec
+(12014400, 300)
+Elapsed time = 1318.0 millsec
+(12014400, 300)
+Elapsed time = 1357.0 millsec
+(12014400, 300)
+Elapsed time = 1294.0 millsec
+SystemDS Statistics:
+Total elapsed time:		11.684 sec.
+Total compilation time:		0.560 sec.
+Total execution time:		11.124 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.763/0.000/0.002/0.052 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.028 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	8.378 sec.
+	WordEmbedding apply time:	8.378 sec.
+TransformEncode PreProc. time:	0.174 sec.
+TransformEncode PostProc. time:	1.541 sec.
+Total JIT compile time:		5.59 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.025 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    8.234      6
+  2  rightIndex        2.735      3
+  3  write             0.052      1
+  4  ncol              0.031      7
+  5  time              0.013     14
+  6  toString          0.007      3
+  7  floor             0.004      6
+  8  <                 0.004      7
+  9  rand              0.003      1
+ 10  +                 0.002     42
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_4800.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results/7.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+bed
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 3220.0 millsec
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2514.0 millsec
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2513.0 millsec
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2576.0 millsec
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2489.0 millsec
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+prolly skipped evictions ;)     2.04405144E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2501.0 millsec
+SystemDS Statistics:
+Total elapsed time:		20.209 sec.
+Total compilation time:		0.579 sec.
+Total execution time:		19.629 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	3.719/0.004/0.002/0.046 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.021 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	64.715 sec.
+	WordEmbedding apply time:	64.715 sec.
+TransformEncode PreProc. time:	0.289 sec.
+TransformEncode PostProc. time:	2.170 sec.
+Total JIT compile time:		6.309 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.015 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   15.799      6
+  2  rightIndex        3.692      3
+  3  write             0.046      1
+  4  ncol              0.029      7
+  5  time              0.014     14
+  6  toString          0.006      3
+  7  <                 0.004      7
+  8  floor             0.003      6
+  9  rand              0.003      1
+ 10  rmvar             0.001     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target4/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_4800.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results/8.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+bed
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2549.0 millsec
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2342.0 millsec
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2618.0 millsec
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2589.0 millsec
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2535.0 millsec
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+prolly skipped evictions ;)     1.92230552E8 vs 57669120152
+(24028800, 300)
+Elapsed time = 2501.0 millsec
+SystemDS Statistics:
+Total elapsed time:		19.351 sec.
+Total compilation time:		0.585 sec.
+Total execution time:		18.767 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	3.537/0.004/0.002/0.044 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.021 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	561.361 sec.
+	WordEmbedding apply time:	561.361 sec.
+TransformEncode PreProc. time:	0.301 sec.
+TransformEncode PostProc. time:	2.211 sec.
+Total JIT compile time:		6.326 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.02 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   15.120      6
+  2  rightIndex        3.516      3
+  3  write             0.044      1
+  4  ncol              0.024      7
+  5  time              0.015     14
+  6  toString          0.006      3
+  7  floor             0.004      6
+  8  <                 0.003      7
+  9  rand              0.003      1
+ 10  rmvar             0.001     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target5/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_4800.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results/9.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+bed
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(24028800, 300)
+Elapsed time = 2576.0 millsec
+(24028800, 300)
+Elapsed time = 2198.0 millsec
+(24028800, 300)
+Elapsed time = 2546.0 millsec
+(24028800, 300)
+Elapsed time = 2575.0 millsec
+(24028800, 300)
+Elapsed time = 2477.0 millsec
+(24028800, 300)
+Elapsed time = 2648.0 millsec
+SystemDS Statistics:
+Total elapsed time:		19.763 sec.
+Total compilation time:		0.573 sec.
+Total execution time:		19.190 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	4.060/0.000/0.002/0.052 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.022 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	8.837 sec.
+	WordEmbedding apply time:	8.837 sec.
+TransformEncode PreProc. time:	0.309 sec.
+TransformEncode PostProc. time:	2.742 sec.
+Total JIT compile time:		5.792 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.014 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   15.005      6
+  2  rightIndex        4.039      3
+  3  write             0.052      1
+  4  ncol              0.024      7
+  5  time              0.018     14
+  6  toString          0.006      3
+  7  rand              0.004      1
+  8  <                 0.003      7
+  9  floor             0.003      6
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_9200.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results/10.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+studios
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+(46055200, 300)
+Elapsed time = 4972.0 millsec
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+(46055200, 300)
+Elapsed time = 4026.0 millsec
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+(46055200, 300)
+Elapsed time = 4715.0 millsec
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+(46055200, 300)
+Elapsed time = 4090.0 millsec
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+(46055200, 300)
+Elapsed time = 4184.0 millsec
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+prolly skipped evictions ;)     3.80616344E8 vs 110532480152
+(46055200, 300)
+Elapsed time = 4269.0 millsec
+SystemDS Statistics:
+Total elapsed time:		31.438 sec.
+Total compilation time:		0.560 sec.
+Total execution time:		30.878 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	4.525/0.005/0.002/0.048 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.021 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	64.239 sec.
+	WordEmbedding apply time:	64.239 sec.
+TransformEncode PreProc. time:	0.519 sec.
+TransformEncode PostProc. time:	4.588 sec.
+Total JIT compile time:		6.488 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.021 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   26.241      6
+  2  rightIndex        4.491      3
+  3  write             0.048      1
+  4  ncol              0.037      7
+  5  time              0.015     14
+  6  toString          0.006      3
+  7  floor             0.004      6
+  8  <                 0.002      7
+  9  rand              0.002      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target4/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_9200.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results/11.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+studios
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+(46055200, 300)
+Elapsed time = 3820.0 millsec
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+(46055200, 300)
+Elapsed time = 5038.0 millsec
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+(46055200, 300)
+Elapsed time = 3556.0 millsec
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+(46055200, 300)
+Elapsed time = 4731.0 millsec
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+(46055200, 300)
+Elapsed time = 4697.0 millsec
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+prolly skipped evictions ;)     3.68441752E8 vs 110532480152
+(46055200, 300)
+Elapsed time = 4320.0 millsec
+SystemDS Statistics:
+Total elapsed time:		32.137 sec.
+Total compilation time:		0.522 sec.
+Total execution time:		31.615 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	5.351/0.004/0.002/0.047 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.020 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	946.563 sec.
+	WordEmbedding apply time:	946.563 sec.
+TransformEncode PreProc. time:	0.515 sec.
+TransformEncode PostProc. time:	4.252 sec.
+Total JIT compile time:		6.833 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.022 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   26.149      6
+  2  rightIndex        5.323      3
+  3  write             0.047      1
+  4  ncol              0.031      7
+  5  time              0.016     14
+  6  toString          0.007      3
+  7  <                 0.004      7
+  8  rand              0.004      1
+  9  floor             0.003      6
+ 10  rmvar             0.001     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target5/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_9200.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results/12.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+studios
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(46055200, 300)
+Elapsed time = 3772.0 millsec
+(46055200, 300)
+Elapsed time = 3824.0 millsec
+(46055200, 300)
+Elapsed time = 3515.0 millsec
+(46055200, 300)
+Elapsed time = 4418.0 millsec
+(46055200, 300)
+Elapsed time = 3883.0 millsec
+(46055200, 300)
+Elapsed time = 4376.0 millsec
+SystemDS Statistics:
+Total elapsed time:		30.053 sec.
+Total compilation time:		0.512 sec.
+Total execution time:		29.540 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	5.646/0.000/0.002/0.047 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.021 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	8.885 sec.
+	WordEmbedding apply time:	8.885 sec.
+TransformEncode PreProc. time:	0.509 sec.
+TransformEncode PostProc. time:	4.098 sec.
+Total JIT compile time:		5.947 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.019 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   23.771      6
+  2  rightIndex        5.623      3
+  3  write             0.047      1
+  4  ncol              0.026      7
+  5  time              0.024     14
+  6  toString          0.006      3
+  7  rand              0.004      1
+  8  <                 0.003      7
+  9  floor             0.003      6
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_18400.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results/13.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+never
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 11466.0 millsec
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 7825.0 millsec
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 7415.0 millsec
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 7651.0 millsec
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 7547.0 millsec
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+prolly skipped evictions ;)     7.49057944E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 8015.0 millsec
+SystemDS Statistics:
+Total elapsed time:		59.365 sec.
+Total compilation time:		0.542 sec.
+Total execution time:		58.823 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	8.803/0.004/0.002/0.048 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.023 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	190.995 sec.
+	WordEmbedding apply time:	190.995 sec.
+TransformEncode PreProc. time:	0.991 sec.
+TransformEncode PostProc. time:	9.537 sec.
+Total JIT compile time:		6.438 sec.
+Total JVM GC count:		2.
+Total JVM GC time:		2.394 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   49.906      6
+  2  rightIndex        8.782      3
+  3  write             0.048      1
+  4  ncol              0.025      7
+  5  time              0.014     14
+  6  toString          0.006      3
+  7  <                 0.003      7
+  8  floor             0.003      6
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target4/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_18400.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results/14.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+never
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 7839.0 millsec
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 9417.0 millsec
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 9548.0 millsec
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 7015.0 millsec
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 8454.0 millsec
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+prolly skipped evictions ;)     7.36883352E8 vs 221064960152
+(92110400, 300)
+Elapsed time = 8193.0 millsec
+SystemDS Statistics:
+Total elapsed time:		60.010 sec.
+Total compilation time:		0.562 sec.
+Total execution time:		59.449 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	8.885/0.004/0.002/0.046 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.022 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	1729.350 sec.
+	WordEmbedding apply time:	1729.350 sec.
+TransformEncode PreProc. time:	1.012 sec.
+TransformEncode PostProc. time:	10.059 sec.
+Total JIT compile time:		6.308 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.017 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   50.453      6
+  2  rightIndex        8.847      3
+  3  write             0.046      1
+  4  ncol              0.041      7
+  5  time              0.016     14
+  6  toString          0.006      3
+  7  <                 0.004      7
+  8  floor             0.003      6
+  9  rand              0.002      1
+ 10  rmvar             0.001     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target5/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_18400.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results/15.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+never
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(92110400, 300)
+Elapsed time = 6690.0 millsec
+(92110400, 300)
+Elapsed time = 7255.0 millsec
+(92110400, 300)
+Elapsed time = 7522.0 millsec
+(92110400, 300)
+Elapsed time = 7308.0 millsec
+(92110400, 300)
+Elapsed time = 9779.0 millsec
+(92110400, 300)
+Elapsed time = 7870.0 millsec
+SystemDS Statistics:
+Total elapsed time:		54.674 sec.
+Total compilation time:		0.615 sec.
+Total execution time:		54.060 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	7.537/0.000/0.002/0.049 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.021 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	9.424 sec.
+	WordEmbedding apply time:	9.424 sec.
+TransformEncode PreProc. time:	1.016 sec.
+TransformEncode PostProc. time:	9.051 sec.
+Total JIT compile time:		5.762 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.026 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   46.409      6
+  2  rightIndex        7.511      3
+  3  write             0.049      1
+  4  ncol              0.028      7
+  5  time              0.014     14
+  6  toString          0.006      3
+  7  <                 0.004      7
+  8  rand              0.003      1
+  9  floor             0.003      6
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_36800.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results/16.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+looked
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 19663.0 millsec
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 14248.0 millsec
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 14903.0 millsec
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 14662.0 millsec
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 15107.0 millsec
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+prolly skipped evictions ;)     1.485941144E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 13881.0 millsec
+SystemDS Statistics:
+Total elapsed time:		109.043 sec.
+Total compilation time:		0.606 sec.
+Total execution time:		108.437 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	15.881/0.004/0.002/0.043 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.019 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	165.777 sec.
+	WordEmbedding apply time:	165.777 sec.
+TransformEncode PreProc. time:	1.919 sec.
+TransformEncode PostProc. time:	18.137 sec.
+Total JIT compile time:		6.403 sec.
+Total JVM GC count:		3.
+Total JVM GC time:		2.378 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   92.451      6
+  2  rightIndex       15.858      3
+  3  write             0.043      1
+  4  ncol              0.026      7
+  5  time              0.014     14
+  6  toString          0.006      3
+  7  rand              0.003      1
+  8  <                 0.003      7
+  9  floor             0.003      6
+ 10  rmvar             0.001     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target4/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_36800.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results/17.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+looked
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 14582.0 millsec
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 13064.0 millsec
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 18254.0 millsec
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 17530.0 millsec
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 17692.0 millsec
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+prolly skipped evictions ;)     1.473766552E9 vs 442129920152
+(184220800, 300)
+Elapsed time = 17523.0 millsec
+SystemDS Statistics:
+Total elapsed time:		115.576 sec.
+Total compilation time:		0.598 sec.
+Total execution time:		114.978 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	16.248/0.004/0.002/0.041 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.019 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	3330.297 sec.
+	WordEmbedding apply time:	3330.297 sec.
+TransformEncode PreProc. time:	2.030 sec.
+TransformEncode PostProc. time:	20.117 sec.
+Total JIT compile time:		7.172 sec.
+Total JVM GC count:		2.
+Total JVM GC time:		1.735 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   98.632      6
+  2  rightIndex       16.175      3
+  3  ncol              0.075      7
+  4  write             0.041      1
+  5  time              0.013     14
+  6  toString          0.006      3
+  7  <                 0.003      7
+  8  floor             0.003      6
+  9  rand              0.002      1
+ 10  rmvar             0.001     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target5/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_500_36800.csv data/words_dictionary2_500.csv data/word_embeddings2_500.csv results/18.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+looked
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(184220800, 300)
+Elapsed time = 14434.0 millsec
+(184220800, 300)
+Elapsed time = 17094.0 millsec
+(184220800, 300)
+Elapsed time = 14431.0 millsec
+(184220800, 300)
+Elapsed time = 14449.0 millsec
+(184220800, 300)
+Elapsed time = 14483.0 millsec
+(184220800, 300)
+Elapsed time = 18671.0 millsec
+SystemDS Statistics:
+Total elapsed time:		110.733 sec.
+Total compilation time:		0.571 sec.
+Total execution time:		110.162 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	16.499/0.000/0.002/0.050 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.019 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	9.655 sec.
+	WordEmbedding apply time:	9.655 sec.
+TransformEncode PreProc. time:	1.954 sec.
+TransformEncode PostProc. time:	18.599 sec.
+Total JIT compile time:		6.63 sec.
+Total JVM GC count:		2.
+Total JVM GC time:		1.765 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   93.549      6
+  2  rightIndex       16.455      3
+  3  write             0.050      1
+  4  ncol              0.048      7
+  5  time              0.015     14
+  6  toString          0.006      3
+  7  floor             0.003      6
+  8  <                 0.002      7
+  9  rand              0.002      1
+ 10  rmvar             0.002     91
+
+python3 plot-single.py  mtw:6M:results/1.csv muw:6M:results/2.csv mpw:6M:results/3.csv mtw:12M:results/4.csv muw:12M:results/5.csv mpw:12M:results/6.csv mtw:24M:results/7.csv muw:24M:results/8.csv mpw:24M:results/9.csv mtw:48M:results/10.csv muw:48M:results/11.csv mpw:48M:results/12.csv mtw:96M:results/13.csv muw:96M:results/14.csv mpw:96M:results/15.csv mtw:192M:results/16.csv muw:192M:results/17.csv mpw:192M:results/18.csv \
+mb:baseline-mn:not_merged_HashMaps-mt:MergedHashMaps-mu:ConcurrentHashMaps-mp:Upfront_built_HashMap \
+"Different-input-sizes,-same-dictionary-size-(10K),multi-threaded" "Input-size"
+mt - MergedHashMaps
+mu - ConcurrentHashMaps
+mp - Upfront built HashMap
+mb : []
+mn : []
+mt : [821.3333333333334, 1643.3333333333333, 2522.0, 4181.0, 7737.666666666667, 14550.0]
+mu : [842.0, 1572.6666666666667, 2541.6666666666665, 4582.666666666667, 7887.333333333333, 17581.666666666668]
+mp : [682.3333333333334, 1323.0, 2566.6666666666665, 4225.666666666667, 8319.0, 15867.666666666666]
+test_name : ['6M', '12M', '24M', '48M', '96M', '192M']
+2023-07-05-22-41-33

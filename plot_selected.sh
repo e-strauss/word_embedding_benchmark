@@ -1,1 +1,0 @@
-python3 plot.py d:0.2K:selected_results/1.csv d:1K:selected_results/2.csv d:5K:selected_results/3.csv d:10K:selected_results/4.csv w:400K:selected_results/5.csv w:800K:selected_results/6.csv w:1200K:selected_results/7.csv w:1600K:selected_results/8.csv w:2000K:selected_results/9.csv w:2400K:selected_results/10.csv

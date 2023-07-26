@@ -1,0 +1,2447 @@
+java -Xmx210g -Xms210g -Xmn21g             -cp target2/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_1000_2000.csv data/words_dictionary2_1000.csv data/word_embeddings2_1000.csv results/1.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+board
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(5006000, 300)
+Elapsed time = 868.0 millsec
+(5006000, 300)
+Elapsed time = 769.0 millsec
+(5006000, 300)
+Elapsed time = 644.0 millsec
+(5006000, 300)
+Elapsed time = 638.0 millsec
+(5006000, 300)
+Elapsed time = 435.0 millsec
+(5006000, 300)
+Elapsed time = 630.0 millsec
+SystemDS Statistics:
+Total elapsed time:		6.663 sec.
+Total compilation time:		0.600 sec.
+Total execution time:		6.063 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	1.971/0.000/0.002/0.055 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.026 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	143.650 sec.
+	WordEmbedding apply time:	143.650 sec.
+TransformEncode PreProc. time:	0.086 sec.
+TransformEncode PostProc. time:	0.577 sec.
+Total JIT compile time:		6.354 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.016 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    3.962      6
+  2  rightIndex        1.942      3
+  3  write             0.055      1
+  4  ncol              0.032      7
+  5  time              0.014     14
+  6  toString          0.007      3
+  7  floor             0.005      6
+  8  <                 0.004      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target30/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_1000_2000.csv data/words_dictionary2_1000.csv data/word_embeddings2_1000.csv results/2.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+board
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 632.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 358.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 511.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 256.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 238.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 194.0 millsec
+SystemDS Statistics:
+Total elapsed time:		5.013 sec.
+Total compilation time:		0.585 sec.
+Total execution time:		4.428 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/0/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.128/0.028/0.023/0.054 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.030 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	1.909 sec.
+	WordEmbedding apply time:	1.909 sec.
+TransformEncode PreProc. time:	0.091 sec.
+TransformEncode PostProc. time:	0.051 sec.
+Total JIT compile time:		5.934 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.025 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    2.163      6
+  2  rightIndex        2.098      3
+  3  write             0.054      1
+  4  ncol              0.033      7
+  5  time              0.015     14
+  6  toString          0.007      3
+  7  floor             0.006      6
+  8  <                 0.004      7
+  9  rand              0.003      1
+ 10  +                 0.002     42
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target31/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_1000_2000.csv data/words_dictionary2_1000.csv data/word_embeddings2_1000.csv results/3.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+board
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 1653.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 1884.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 2074.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 1206.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 1606.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 1541.0 millsec
+SystemDS Statistics:
+Total elapsed time:		12.823 sec.
+Total compilation time:		0.606 sec.
+Total execution time:		12.217 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.136/0.001/0.002/0.057 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.029 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	2.123 sec.
+	WordEmbedding apply time:	2.123 sec.
+TransformEncode PreProc. time:	0.089 sec.
+TransformEncode PostProc. time:	0.693 sec.
+Total JIT compile time:		6.176 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.022 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    9.939      6
+  2  rightIndex        2.112      3
+  3  write             0.058      1
+  4  ncol              0.026      7
+  5  time              0.015     14
+  6  toString          0.009      3
+  7  floor             0.005      6
+  8  <                 0.004      7
+  9  rand              0.004      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target32/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_1000_2000.csv data/words_dictionary2_1000.csv data/word_embeddings2_1000.csv results/4.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+board
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 1362.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 1359.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 1179.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 1299.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 1204.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 1172.0 millsec
+SystemDS Statistics:
+Total elapsed time:		10.538 sec.
+Total compilation time:		0.630 sec.
+Total execution time:		9.908 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.220/0.000/0.002/0.055 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.028 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	3.366 sec.
+	WordEmbedding apply time:	3.366 sec.
+TransformEncode PreProc. time:	0.089 sec.
+TransformEncode PostProc. time:	0.604 sec.
+Total JIT compile time:		5.666 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.021 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    7.553      6
+  2  rightIndex        2.179      3
+  3  write             0.055      1
+  4  ncol              0.044      7
+  5  time              0.015     14
+  6  toString          0.009      3
+  7  floor             0.006      6
+  8  <                 0.004      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target33/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_1000_2000.csv data/words_dictionary2_1000.csv data/word_embeddings2_1000.csv results/5.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+board
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 1330.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 878.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 589.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 623.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 1075.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 1087.0 millsec
+SystemDS Statistics:
+Total elapsed time:		8.333 sec.
+Total compilation time:		0.588 sec.
+Total execution time:		7.746 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.049/0.000/0.002/0.055 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.032 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	5.272 sec.
+	WordEmbedding apply time:	5.272 sec.
+TransformEncode PreProc. time:	0.098 sec.
+TransformEncode PostProc. time:	0.611 sec.
+Total JIT compile time:		6.083 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.022 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    5.556      6
+  2  rightIndex        2.026      3
+  3  write             0.055      1
+  4  ncol              0.026      7
+  5  time              0.016     14
+  6  toString          0.007      3
+  7  floor             0.005      6
+  8  <                 0.004      7
+  9  rand              0.004      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target34/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_1000_2000.csv data/words_dictionary2_1000.csv data/word_embeddings2_1000.csv results/6.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+board
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 1181.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 1026.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 684.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 768.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 600.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 607.0 millsec
+SystemDS Statistics:
+Total elapsed time:		7.510 sec.
+Total compilation time:		0.610 sec.
+Total execution time:		6.899 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	1.939/0.000/0.002/0.043 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.021 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	9.865 sec.
+	WordEmbedding apply time:	9.865 sec.
+TransformEncode PreProc. time:	0.070 sec.
+TransformEncode PostProc. time:	0.350 sec.
+Total JIT compile time:		6.08 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.022 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    4.851      6
+  2  rightIndex        1.900      3
+  3  write             0.043      1
+  4  ncol              0.042      7
+  5  time              0.014     14
+  6  toString          0.007      3
+  7  floor             0.004      6
+  8  <                 0.004      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target35/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_1000_2000.csv data/words_dictionary2_1000.csv data/word_embeddings2_1000.csv results/7.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+board
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 1252.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 706.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 585.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 613.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 604.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006000, 300)
+Elapsed time = 606.0 millsec
+SystemDS Statistics:
+Total elapsed time:		7.432 sec.
+Total compilation time:		0.521 sec.
+Total execution time:		6.911 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.433/0.000/0.002/0.054 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.025 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	21.008 sec.
+	WordEmbedding apply time:	21.008 sec.
+TransformEncode PreProc. time:	0.083 sec.
+TransformEncode PostProc. time:	0.580 sec.
+Total JIT compile time:		6.833 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.014 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    4.346      6
+  2  rightIndex        2.410      3
+  3  write             0.054      1
+  4  ncol              0.025      7
+  5  time              0.017     14
+  6  toString          0.008      3
+  7  floor             0.005      6
+  8  <                 0.004      7
+  9  rand              0.004      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target2/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_200_400.csv data/words_dictionary2_200.csv data/word_embeddings2_200.csv results/8.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+issues
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(5006800, 300)
+Elapsed time = 878.0 millsec
+(5006800, 300)
+Elapsed time = 694.0 millsec
+(5006800, 300)
+Elapsed time = 762.0 millsec
+(5006800, 300)
+Elapsed time = 761.0 millsec
+(5006800, 300)
+Elapsed time = 667.0 millsec
+(5006800, 300)
+Elapsed time = 536.0 millsec
+SystemDS Statistics:
+Total elapsed time:		7.523 sec.
+Total compilation time:		0.583 sec.
+Total execution time:		6.941 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.536/0.000/0.002/0.050 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.026 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	143.881 sec.
+	WordEmbedding apply time:	143.881 sec.
+TransformEncode PreProc. time:	0.080 sec.
+TransformEncode PostProc. time:	0.815 sec.
+Total JIT compile time:		5.751 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.019 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    4.278      6
+  2  rightIndex        2.506      3
+  3  write             0.050      1
+  4  ncol              0.033      7
+  5  time              0.015     14
+  6  toString          0.009      3
+  7  floor             0.004      6
+  8  <                 0.004      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target30/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_200_400.csv data/words_dictionary2_200.csv data/word_embeddings2_200.csv results/9.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+issues
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 550.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 434.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 525.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 347.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 478.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 291.0 millsec
+SystemDS Statistics:
+Total elapsed time:		5.742 sec.
+Total compilation time:		0.565 sec.
+Total execution time:		5.177 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/0/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.427/0.029/0.021/0.055 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.030 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	2.329 sec.
+	WordEmbedding apply time:	2.329 sec.
+TransformEncode PreProc. time:	0.089 sec.
+TransformEncode PostProc. time:	0.039 sec.
+Total JIT compile time:		5.756 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.02 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    2.600      6
+  2  rightIndex        2.394      3
+  3  write             0.055      1
+  4  ncol              0.036      7
+  5  time              0.026     14
+  6  toString          0.008      3
+  7  floor             0.006      6
+  8  <                 0.004      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target31/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_200_400.csv data/words_dictionary2_200.csv data/word_embeddings2_200.csv results/10.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+issues
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 2258.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 2745.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 2263.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1394.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1497.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1443.0 millsec
+SystemDS Statistics:
+Total elapsed time:		14.554 sec.
+Total compilation time:		0.593 sec.
+Total execution time:		13.961 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.248/0.000/0.002/0.055 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.029 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	2.696 sec.
+	WordEmbedding apply time:	2.696 sec.
+TransformEncode PreProc. time:	0.089 sec.
+TransformEncode PostProc. time:	1.326 sec.
+Total JIT compile time:		6.031 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.015 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   11.575      6
+  2  rightIndex        2.212      3
+  3  write             0.056      1
+  4  ncol              0.039      7
+  5  time              0.014     14
+  6  toString          0.008      3
+  7  floor             0.005      6
+  8  <                 0.004      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target32/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_200_400.csv data/words_dictionary2_200.csv data/word_embeddings2_200.csv results/11.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+issues
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1531.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1861.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1548.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1516.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1448.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1393.0 millsec
+SystemDS Statistics:
+Total elapsed time:		12.299 sec.
+Total compilation time:		0.570 sec.
+Total execution time:		11.729 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.324/0.001/0.002/0.054 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.028 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	3.787 sec.
+	WordEmbedding apply time:	3.787 sec.
+TransformEncode PreProc. time:	0.090 sec.
+TransformEncode PostProc. time:	0.996 sec.
+Total JIT compile time:		6.012 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.02 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    9.274      6
+  2  rightIndex        2.290      3
+  3  write             0.054      1
+  4  ncol              0.037      7
+  5  time              0.014     14
+  6  toString          0.008      3
+  7  floor             0.005      6
+  8  <                 0.003      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target33/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_200_400.csv data/words_dictionary2_200.csv data/word_embeddings2_200.csv results/12.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+issues
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1201.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1280.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 685.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1322.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1289.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1252.0 millsec
+SystemDS Statistics:
+Total elapsed time:		10.356 sec.
+Total compilation time:		0.540 sec.
+Total execution time:		9.816 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.672/0.001/0.002/0.053 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.028 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	6.040 sec.
+	WordEmbedding apply time:	6.040 sec.
+TransformEncode PreProc. time:	0.082 sec.
+TransformEncode PostProc. time:	0.851 sec.
+Total JIT compile time:		6.744 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.018 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    7.009      6
+  2  rightIndex        2.632      3
+  3  write             0.053      1
+  4  ncol              0.043      7
+  5  time              0.015     14
+  6  toString          0.010      3
+  7  floor             0.005      6
+  8  <                 0.004      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target34/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_200_400.csv data/words_dictionary2_200.csv data/word_embeddings2_200.csv results/13.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+issues
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1246.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1127.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 735.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1039.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1010.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1088.0 millsec
+SystemDS Statistics:
+Total elapsed time:		9.464 sec.
+Total compilation time:		0.519 sec.
+Total execution time:		8.945 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.585/0.001/0.002/0.058 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.031 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	11.357 sec.
+	WordEmbedding apply time:	11.357 sec.
+TransformEncode PreProc. time:	0.090 sec.
+TransformEncode PostProc. time:	0.963 sec.
+Total JIT compile time:		6.378 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.02 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    6.221      6
+  2  rightIndex        2.553      3
+  3  write             0.058      1
+  4  ncol              0.034      7
+  5  time              0.015     14
+  6  toString          0.007      3
+  7  floor             0.005      6
+  8  <                 0.004      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target35/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_200_400.csv data/words_dictionary2_200.csv data/word_embeddings2_200.csv results/14.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+issues
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1523.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 907.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 841.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 854.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 772.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 791.0 millsec
+SystemDS Statistics:
+Total elapsed time:		8.864 sec.
+Total compilation time:		0.605 sec.
+Total execution time:		8.259 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.468/0.000/0.002/0.049 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.027 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	28.267 sec.
+	WordEmbedding apply time:	28.267 sec.
+TransformEncode PreProc. time:	0.082 sec.
+TransformEncode PostProc. time:	0.885 sec.
+Total JIT compile time:		7.569 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.02 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    5.665      6
+  2  rightIndex        2.421      3
+  3  ncol              0.049      7
+  4  write             0.049      1
+  5  time              0.015     14
+  6  toString          0.008      3
+  7  floor             0.005      6
+  8  <                 0.003      7
+  9  rand              0.003      1
+ 10  +                 0.002     42
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target2/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_100.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results/15.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+universalist
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(5006800, 300)
+Elapsed time = 1191.0 millsec
+(5006800, 300)
+Elapsed time = 710.0 millsec
+(5006800, 300)
+Elapsed time = 732.0 millsec
+(5006800, 300)
+Elapsed time = 767.0 millsec
+(5006800, 300)
+Elapsed time = 765.0 millsec
+(5006800, 300)
+Elapsed time = 699.0 millsec
+SystemDS Statistics:
+Total elapsed time:		8.168 sec.
+Total compilation time:		0.581 sec.
+Total execution time:		7.587 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.612/0.000/0.002/0.050 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.029 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	143.006 sec.
+	WordEmbedding apply time:	143.006 sec.
+TransformEncode PreProc. time:	0.080 sec.
+TransformEncode PostProc. time:	1.305 sec.
+Total JIT compile time:		6.228 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.022 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    4.842      6
+  2  rightIndex        2.576      3
+  3  write             0.050      1
+  4  ncol              0.038      7
+  5  time              0.015     14
+  6  toString          0.008      3
+  7  <                 0.004      7
+  8  floor             0.004      6
+  9  rand              0.004      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target30/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_100.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results/16.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+universalist
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 547.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 679.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 574.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 495.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 429.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 456.0 millsec
+SystemDS Statistics:
+Total elapsed time:		6.459 sec.
+Total compilation time:		0.634 sec.
+Total execution time:		5.825 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/0/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.537/0.028/0.022/0.054 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.028 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	2.893 sec.
+	WordEmbedding apply time:	2.893 sec.
+TransformEncode PreProc. time:	0.085 sec.
+TransformEncode PostProc. time:	0.045 sec.
+Total JIT compile time:		6.302 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.015 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    3.156      6
+  2  rightIndex        2.510      3
+  3  write             0.054      1
+  4  ncol              0.030      7
+  5  time              0.014     14
+  6  toString          0.008      3
+  7  floor             0.004      6
+  8  rand              0.003      1
+  9  <                 0.003      7
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target31/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_100.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results/17.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+universalist
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 3096.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 3159.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 2578.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 2681.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 2315.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 2540.0 millsec
+SystemDS Statistics:
+Total elapsed time:		19.129 sec.
+Total compilation time:		0.534 sec.
+Total execution time:		18.595 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.113/0.000/0.002/0.055 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.030 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	3.707 sec.
+	WordEmbedding apply time:	3.707 sec.
+TransformEncode PreProc. time:	0.089 sec.
+TransformEncode PostProc. time:	1.503 sec.
+Total JIT compile time:		5.749 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.02 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   16.344      6
+  2  rightIndex        2.080      3
+  3  write             0.055      1
+  4  ncol              0.036      7
+  5  time              0.015     14
+  6  toString          0.008      3
+  7  floor             0.005      6
+  8  <                 0.003      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target32/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_100.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results/18.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+universalist
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 2201.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 2111.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1736.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1955.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 2004.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1933.0 millsec
+SystemDS Statistics:
+Total elapsed time:		15.040 sec.
+Total compilation time:		0.485 sec.
+Total execution time:		14.555 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.484/0.001/0.002/0.054 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.030 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	7.431 sec.
+	WordEmbedding apply time:	7.431 sec.
+TransformEncode PreProc. time:	0.086 sec.
+TransformEncode PostProc. time:	1.318 sec.
+Total JIT compile time:		6.051 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.013 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   11.916      6
+  2  rightIndex        2.452      3
+  3  write             0.054      1
+  4  ncol              0.035      7
+  5  time              0.035     14
+  6  toString          0.007      3
+  7  floor             0.005      6
+  8  <                 0.003      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target33/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_100.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results/19.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+universalist
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1866.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1472.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1725.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1776.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1755.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1738.0 millsec
+SystemDS Statistics:
+Total elapsed time:		13.608 sec.
+Total compilation time:		0.586 sec.
+Total execution time:		13.022 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.579/0.000/0.002/0.051 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.030 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	14.562 sec.
+	WordEmbedding apply time:	14.562 sec.
+TransformEncode PreProc. time:	0.086 sec.
+TransformEncode PostProc. time:	1.341 sec.
+Total JIT compile time:		6.418 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.019 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   10.308      6
+  2  rightIndex        2.549      3
+  3  write             0.051      1
+  4  ncol              0.033      7
+  5  time              0.016     14
+  6  toString          0.008      3
+  7  floor             0.005      6
+  8  <                 0.003      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target34/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_100.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results/20.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+universalist
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1821.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1727.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1570.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1642.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1560.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1643.0 millsec
+SystemDS Statistics:
+Total elapsed time:		13.075 sec.
+Total compilation time:		0.580 sec.
+Total execution time:		12.495 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.424/0.000/0.002/0.053 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.029 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	25.092 sec.
+	WordEmbedding apply time:	25.092 sec.
+TransformEncode PreProc. time:	0.092 sec.
+TransformEncode PostProc. time:	1.464 sec.
+Total JIT compile time:		6.401 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.021 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    9.938      6
+  2  rightIndex        2.359      3
+  3  ncol              0.068      7
+  4  write             0.053      1
+  5  time              0.014     14
+  6  toString          0.008      3
+  7  floor             0.005      6
+  8  <                 0.003      7
+  9  rand              0.003      1
+ 10  +                 0.002     42
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target35/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_50_100.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results/21.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+universalist
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 2142.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1653.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1519.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1492.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1802.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006800, 300)
+Elapsed time = 1439.0 millsec
+SystemDS Statistics:
+Total elapsed time:		13.522 sec.
+Total compilation time:		0.549 sec.
+Total execution time:		12.973 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	2.812/0.001/0.002/0.054 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.029 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	61.995 sec.
+	WordEmbedding apply time:	61.995 sec.
+TransformEncode PreProc. time:	0.091 sec.
+TransformEncode PostProc. time:	1.396 sec.
+Total JIT compile time:		6.852 sec.
+Total JVM GC count:		2.
+Total JVM GC time:		0.405 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   10.023      6
+  2  rightIndex        2.780      3
+  3  write             0.054      1
+  4  ncol              0.035      7
+  5  time              0.015     14
+  6  toString          0.009      3
+  7  floor             0.005      6
+  8  <                 0.004      7
+  9  rand              0.004      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target2/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_10_20.csv data/words_dictionary2_10.csv data/word_embeddings2_10.csv results/22.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+izmit
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(5006840, 300)
+Elapsed time = 2164.0 millsec
+(5006840, 300)
+Elapsed time = 1602.0 millsec
+(5006840, 300)
+Elapsed time = 1485.0 millsec
+(5006840, 300)
+Elapsed time = 1475.0 millsec
+(5006840, 300)
+Elapsed time = 1398.0 millsec
+(5006840, 300)
+Elapsed time = 1349.0 millsec
+SystemDS Statistics:
+Total elapsed time:		13.544 sec.
+Total compilation time:		0.566 sec.
+Total execution time:		12.978 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	3.405/0.000/0.002/0.048 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.026 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	206.371 sec.
+	WordEmbedding apply time:	206.371 sec.
+TransformEncode PreProc. time:	0.075 sec.
+TransformEncode PostProc. time:	4.520 sec.
+Total JIT compile time:		6.587 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.019 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    9.451      6
+  2  rightIndex        3.350      3
+  3  ncol              0.058      7
+  4  write             0.048      1
+  5  time              0.012     14
+  6  toString          0.008      3
+  7  <                 0.004      7
+  8  floor             0.004      6
+  9  rand              0.004      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target30/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_10_20.csv data/words_dictionary2_10.csv data/word_embeddings2_10.csv results/23.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+izmit
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 1788.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 1524.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 1318.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 1162.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 1166.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 1149.0 millsec
+SystemDS Statistics:
+Total elapsed time:		12.155 sec.
+Total compilation time:		0.554 sec.
+Total execution time:		11.601 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/0/0/1.
+Cache times (ACQr/m, RLS, EXP):	3.318/0.027/0.021/0.118 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.029 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	7.695 sec.
+	WordEmbedding apply time:	7.695 sec.
+TransformEncode PreProc. time:	0.088 sec.
+TransformEncode PostProc. time:	0.040 sec.
+Total JIT compile time:		6.751 sec.
+Total JVM GC count:		2.
+Total JVM GC time:		0.078 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply    8.083      6
+  2  rightIndex        3.257      3
+  3  write             0.118      1
+  4  ncol              0.064      7
+  5  time              0.014     14
+  6  toString          0.008      3
+  7  floor             0.006      6
+  8  <                 0.005      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target31/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_10_20.csv data/words_dictionary2_10.csv data/word_embeddings2_10.csv results/24.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+izmit
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 4973.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 3912.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 5538.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 3639.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 3635.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 3677.0 millsec
+SystemDS Statistics:
+Total elapsed time:		29.423 sec.
+Total compilation time:		0.514 sec.
+Total execution time:		28.909 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	3.436/0.000/0.002/0.045 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.023 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	12.495 sec.
+	WordEmbedding apply time:	12.495 sec.
+TransformEncode PreProc. time:	0.064 sec.
+TransformEncode PostProc. time:	4.045 sec.
+Total JIT compile time:		7.203 sec.
+Total JVM GC count:		2.
+Total JVM GC time:		0.505 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   25.356      6
+  2  rightIndex        3.380      3
+  3  ncol              0.059      7
+  4  write             0.045      1
+  5  time              0.015     14
+  6  toString          0.007      3
+  7  <                 0.005      7
+  8  floor             0.004      6
+  9  rand              0.004      1
+ 10  rmvar             0.001     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target32/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_10_20.csv data/words_dictionary2_10.csv data/word_embeddings2_10.csv results/25.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+izmit
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 3973.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 3617.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 2678.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 2798.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 2690.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 3014.0 millsec
+SystemDS Statistics:
+Total elapsed time:		22.772 sec.
+Total compilation time:		0.611 sec.
+Total execution time:		22.161 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	3.277/0.000/0.002/0.054 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.029 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	21.513 sec.
+	WordEmbedding apply time:	21.513 sec.
+TransformEncode PreProc. time:	0.085 sec.
+TransformEncode PostProc. time:	3.712 sec.
+Total JIT compile time:		6.929 sec.
+Total JVM GC count:		2.
+Total JVM GC time:		0.37 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   18.746      6
+  2  rightIndex        3.217      3
+  3  ncol              0.063      7
+  4  write             0.054      1
+  5  time              0.015     14
+  6  toString          0.008      3
+  7  floor             0.005      6
+  8  <                 0.005      7
+  9  rand              0.004      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target33/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_10_20.csv data/words_dictionary2_10.csv data/word_embeddings2_10.csv results/26.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+izmit
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 4602.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 2996.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 2646.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 2678.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 3172.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 2656.0 millsec
+SystemDS Statistics:
+Total elapsed time:		23.120 sec.
+Total compilation time:		0.591 sec.
+Total execution time:		22.529 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	3.652/0.000/0.002/0.070 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.029 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	40.132 sec.
+	WordEmbedding apply time:	40.132 sec.
+TransformEncode PreProc. time:	0.078 sec.
+TransformEncode PostProc. time:	4.067 sec.
+Total JIT compile time:		7.382 sec.
+Total JVM GC count:		3.
+Total JVM GC time:		1.469 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   18.728      6
+  2  rightIndex        3.595      3
+  3  write             0.070      1
+  4  ncol              0.060      7
+  5  time              0.016     14
+  6  toString          0.007      3
+  7  floor             0.005      6
+  8  <                 0.003      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target34/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_10_20.csv data/words_dictionary2_10.csv data/word_embeddings2_10.csv results/27.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+izmit
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 4189.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 2639.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 2579.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 3159.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 2375.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 2671.0 millsec
+SystemDS Statistics:
+Total elapsed time:		21.847 sec.
+Total compilation time:		0.573 sec.
+Total execution time:		21.275 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	3.553/0.000/0.002/0.053 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.028 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	55.326 sec.
+	WordEmbedding apply time:	55.326 sec.
+TransformEncode PreProc. time:	0.080 sec.
+TransformEncode PostProc. time:	4.746 sec.
+Total JIT compile time:		7.35 sec.
+Total JVM GC count:		3.
+Total JVM GC time:		1.525 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   17.588      6
+  2  rightIndex        3.497      3
+  3  ncol              0.059      7
+  4  write             0.053      1
+  5  time              0.016     14
+  6  toString          0.007      3
+  7  <                 0.004      7
+  8  floor             0.004      6
+  9  rand              0.004      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target35/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_10_20.csv data/words_dictionary2_10.csv data/word_embeddings2_10.csv results/28.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+izmit
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 4218.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 2491.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 2449.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 2998.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 2444.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006840, 300)
+Elapsed time = 2415.0 millsec
+SystemDS Statistics:
+Total elapsed time:		21.412 sec.
+Total compilation time:		0.525 sec.
+Total execution time:		20.887 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	3.756/0.000/0.002/0.057 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.028 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	97.141 sec.
+	WordEmbedding apply time:	97.141 sec.
+TransformEncode PreProc. time:	0.085 sec.
+TransformEncode PostProc. time:	5.090 sec.
+Total JIT compile time:		9.697 sec.
+Total JVM GC count:		3.
+Total JVM GC time:		1.495 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   16.992      6
+  2  rightIndex        3.697      3
+  3  ncol              0.062      7
+  4  write             0.057      1
+  5  time              0.018     14
+  6  toString          0.007      3
+  7  floor             0.004      6
+  8  <                 0.004      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target2/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_1_2.csv data/words_dictionary2_1.csv data/word_embeddings2_1.csv results/29.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+wgpagename
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+(5006842, 300)
+Elapsed time = 7583.0 millsec
+(5006842, 300)
+Elapsed time = 5554.0 millsec
+(5006842, 300)
+Elapsed time = 11229.0 millsec
+(5006842, 300)
+Elapsed time = 5237.0 millsec
+(5006842, 300)
+Elapsed time = 5400.0 millsec
+(5006842, 300)
+Elapsed time = 7388.0 millsec
+SystemDS Statistics:
+Total elapsed time:		64.042 sec.
+Total compilation time:		0.549 sec.
+Total execution time:		63.493 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	21.000/0.000/0.002/0.044 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.024 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	1134.042 sec.
+	WordEmbedding apply time:	1134.042 sec.
+TransformEncode PreProc. time:	0.056 sec.
+TransformEncode PostProc. time:	16.382 sec.
+Total JIT compile time:		7.829 sec.
+Total JVM GC count:		10.
+Total JVM GC time:		6.782 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   42.377      6
+  2  rightIndex       20.779      3
+  3  ncol              0.224      7
+  4  write             0.044      1
+  5  time              0.017     14
+  6  toString          0.007      3
+  7  <                 0.003      7
+  8  rand              0.003      1
+  9  floor             0.003      6
+ 10  rmvar             0.001     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target30/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_1_2.csv data/words_dictionary2_1.csv data/word_embeddings2_1.csv results/30.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+wgpagename
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 5664.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 3905.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 9652.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 4730.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 4588.0 millsec
+using 1 concurrent build tasks
+using 2 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 5759.0 millsec
+SystemDS Statistics:
+Total elapsed time:		42.703 sec.
+Total compilation time:		0.537 sec.
+Total execution time:		42.166 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/0/0/1.
+Cache times (ACQr/m, RLS, EXP):	7.759/0.028/0.020/0.052 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.027 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	32.630 sec.
+	WordEmbedding apply time:	32.630 sec.
+TransformEncode PreProc. time:	0.079 sec.
+TransformEncode PostProc. time:	0.041 sec.
+Total JIT compile time:		6.466 sec.
+Total JVM GC count:		10.
+Total JVM GC time:		6.725 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   34.277      6
+  2  rightIndex        7.522      3
+  3  ncol              0.241      7
+  4  write             0.052      1
+  5  time              0.015     14
+  6  toString          0.007      3
+  7  floor             0.005      6
+  8  <                 0.003      7
+  9  rand              0.003      1
+ 10  +                 0.002     42
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target31/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_1_2.csv data/words_dictionary2_1.csv data/word_embeddings2_1.csv results/31.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+wgpagename
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 7333.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 5370.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 14917.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 8419.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 8541.0 millsec
+using 2 concurrent build tasks
+using 4 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 10562.0 millsec
+SystemDS Statistics:
+Total elapsed time:		72.737 sec.
+Total compilation time:		0.593 sec.
+Total execution time:		72.144 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	16.914/0.001/0.002/0.040 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.023 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	49.953 sec.
+	WordEmbedding apply time:	49.953 sec.
+TransformEncode PreProc. time:	0.063 sec.
+TransformEncode PostProc. time:	14.019 sec.
+Total JIT compile time:		7.329 sec.
+Total JVM GC count:		10.
+Total JVM GC time:		7.481 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   55.124      6
+  2  rightIndex       16.702      3
+  3  ncol              0.215      7
+  4  write             0.040      1
+  5  time              0.012     14
+  6  toString          0.005      3
+  7  floor             0.005      6
+  8  <                 0.003      7
+  9  rand              0.003      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target32/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_1_2.csv data/words_dictionary2_1.csv data/word_embeddings2_1.csv results/32.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+wgpagename
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 7127.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 6246.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 10394.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 5327.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 5297.0 millsec
+using 4 concurrent build tasks
+using 8 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 6555.0 millsec
+SystemDS Statistics:
+Total elapsed time:		49.107 sec.
+Total compilation time:		0.602 sec.
+Total execution time:		48.505 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	7.462/0.000/0.002/0.047 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.022 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	65.566 sec.
+	WordEmbedding apply time:	65.566 sec.
+TransformEncode PreProc. time:	0.062 sec.
+TransformEncode PostProc. time:	13.182 sec.
+Total JIT compile time:		6.239 sec.
+Total JVM GC count:		10.
+Total JVM GC time:		6.573 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   40.929      6
+  2  rightIndex        7.259      3
+  3  ncol              0.205      7
+  4  write             0.047      1
+  5  time              0.017     14
+  6  toString          0.005      3
+  7  floor             0.003      6
+  8  <                 0.002      7
+  9  rand              0.002      1
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target33/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_1_2.csv data/words_dictionary2_1.csv data/word_embeddings2_1.csv results/33.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+wgpagename
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 7193.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 5705.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 11240.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 5417.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 5392.0 millsec
+using 8 concurrent build tasks
+using 16 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 7169.0 millsec
+SystemDS Statistics:
+Total elapsed time:		50.392 sec.
+Total compilation time:		0.597 sec.
+Total execution time:		49.796 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	7.587/0.000/0.002/0.042 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.020 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	90.576 sec.
+	WordEmbedding apply time:	90.576 sec.
+TransformEncode PreProc. time:	0.054 sec.
+TransformEncode PostProc. time:	16.235 sec.
+Total JIT compile time:		6.59 sec.
+Total JVM GC count:		10.
+Total JVM GC time:		7.052 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   42.101      6
+  2  rightIndex        7.357      3
+  3  ncol              0.233      7
+  4  write             0.042      1
+  5  time              0.014     14
+  6  toString          0.007      3
+  7  <                 0.003      7
+  8  rand              0.003      1
+  9  floor             0.003      6
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target34/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_1_2.csv data/words_dictionary2_1.csv data/word_embeddings2_1.csv results/34.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+wgpagename
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 6723.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 5019.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 10738.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 5010.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 4833.0 millsec
+using 16 concurrent build tasks
+using 32 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 6452.0 millsec
+SystemDS Statistics:
+Total elapsed time:		46.819 sec.
+Total compilation time:		0.532 sec.
+Total execution time:		46.287 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	7.413/0.000/0.002/0.046 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.022 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	151.992 sec.
+	WordEmbedding apply time:	151.992 sec.
+TransformEncode PreProc. time:	0.055 sec.
+TransformEncode PostProc. time:	15.544 sec.
+Total JIT compile time:		7.114 sec.
+Total JVM GC count:		10.
+Total JVM GC time:		6.979 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   38.758      6
+  2  rightIndex        7.197      3
+  3  ncol              0.219      7
+  4  write             0.046      1
+  5  time              0.014     14
+  6  toString          0.008      3
+  7  <                 0.004      7
+  8  rand              0.003      1
+  9  floor             0.003      6
+ 10  rmvar             0.002     91
+
+java -Xmx210g -Xms210g -Xmn21g             -cp target35/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t2.dml             -stats             -exec singlenode             -args data/words2_1_2.csv data/words_dictionary2_1.csv data/word_embeddings2_1.csv results/35.csv
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.util.Shell).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+0.148
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+wgpagename
+
+# FRAME: nrow = 1, ncol = 1
+# C1
+# STRING
+.·1
+
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 6504.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 4793.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 10633.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 4483.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 4560.0 millsec
+using 32 concurrent build tasks
+using 64 concurrent apply tasks
+(5006842, 300)
+Elapsed time = 6110.0 millsec
+SystemDS Statistics:
+Total elapsed time:		57.448 sec.
+Total compilation time:		0.610 sec.
+Total execution time:		56.838 sec.
+Cache hits (Mem/Li/WB/FS/HDFS):	29/0/0/0/3.
+Cache writes (Li/WB/FS/HDFS):	0/6/0/1.
+Cache times (ACQr/m, RLS, EXP):	19.656/0.000/0.002/0.047 sec.
+HOP DAGs recompiled (PRED, SB):	0/7.
+HOP DAGs recompile time:	0.021 sec.
+TransformEncode num. encoders:	6
+TransformEncode build time:	0.000 sec.
+TransformEncode apply time:	285.035 sec.
+	WordEmbedding apply time:	285.035 sec.
+TransformEncode PreProc. time:	0.054 sec.
+TransformEncode PostProc. time:	16.987 sec.
+Total JIT compile time:		8.368 sec.
+Total JVM GC count:		10.
+Total JVM GC time:		7.183 sec.
+Heavy hitter instructions:
+  #  Instruction     Time(s)  Count
+  1  transformapply   37.069      6
+  2  rightIndex       19.447      3
+  3  ncol              0.212      7
+  4  write             0.047      1
+  5  time              0.016     14
+  6  toString          0.006      3
+  7  floor             0.003      6
+  8  <                 0.002      7
+  9  rand              0.002      1
+ 10  +                 0.001     42
+
+python3 plot-single.py  mnd:2.5K:results/1.csv m0td:2.5K:results/2.csv m1td:2.5K:results/3.csv m2td:2.5K:results/4.csv m3td:2.5K:results/5.csv m4td:2.5K:results/6.csv m5td:2.5K:results/7.csv mnd:12.5K:results/8.csv m0td:12.5K:results/9.csv m1td:12.5K:results/10.csv m2td:12.5K:results/11.csv m3td:12.5K:results/12.csv m4td:12.5K:results/13.csv m5td:12.5K:results/14.csv mnd:50K:results/15.csv m0td:50K:results/16.csv m1td:50K:results/17.csv m2td:50K:results/18.csv m3td:50K:results/19.csv m4td:50K:results/20.csv m5td:50K:results/21.csv mnd:250K:results/22.csv m0td:250K:results/23.csv m1td:250K:results/24.csv m2td:250K:results/25.csv m3td:250K:results/26.csv m4td:250K:results/27.csv m5td:250K:results/28.csv mnd:2500K:results/29.csv m0td:2500K:results/30.csv m1td:2500K:results/31.csv m2td:2500K:results/32.csv m3td:2500K:results/33.csv m4td:2500K:results/34.csv m5td:2500K:results/35.csv \
+se:new_encoder-sb:singlethreaded_baseline-sn:singlethreaded_new_denseblock-mb:multithreaded_baseline-mn:multithreaded_new_denseblock-mt:multithreaded_new_denseblock2 \
+\Different-dictionary-sizes,-same-input-size-(5M)" "Dictionary-size"
+mn - multithreaded new denseblock
+m0t - 1 Build Task 2 Apply Tasks
+m1t - 2 Build Tasks 4 Apply Tasks
+m2t - 4 Build Tasks 8 Apply Tasks
+m3t - 8 Build Tasks 16 Apply Tasks
+m4t - 16 Build Tasks 32 Apply Tasks
+m5t - 32 Build Tasks 64 Apply Tasks
+sn : []
+mb : []
+mn : [567.6666666666666, 654.6666666666666, 743.6666666666666, 1407.3333333333333, 6008.333333333333]
+mt : []
+m0t : [229.33333333333334, 372.0, 460.0, 1159.0, 5025.666666666667]
+m1t : [1451.0, 1444.6666666666667, 2512.0, 3650.3333333333335, 9174.0]
+m2t : [1225.0, 1452.3333333333333, 1964.0, 2834.0, 5726.333333333333]
+m3t : [928.3333333333334, 1287.6666666666667, 1756.3333333333333, 2835.3333333333335, 5992.666666666667]
+m4t : [658.3333333333334, 1045.6666666666667, 1615.0, 2735.0, 5431.666666666667]
+m5t : [607.6666666666666, 805.6666666666666, 1577.6666666666667, 2619.0, 5051.0]
+test_name : ['2.5K', '12.5K', '50K', '250K', '2500K']
+2023-07-06-09-20-06
