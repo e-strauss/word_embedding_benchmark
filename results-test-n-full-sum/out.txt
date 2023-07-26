@@ -12,49 +12,49 @@ flash
 .·1
 
 (1001360, 300)
-Elapsed time for transform = 959.0 millsec
-0.0
-Elapsed time = 26.0 millsec
-0.0
-Elapsed time = 11.0 millsec
-0.0
-Elapsed time = 9.0 millsec
-0.0
-Elapsed time = 10.0 millsec
-0.0
-Elapsed time = 9.0 millsec
-0.0
-Elapsed time = 9.0 millsec
+Elapsed time for transform = 613.0 millsec
+1780544.3830905815
+Elapsed time = 191.0 millsec
+1780544.3830905815
+Elapsed time = 52.0 millsec
+1780544.3830905815
+Elapsed time = 51.0 millsec
+1780544.3830905815
+Elapsed time = 54.0 millsec
+1780544.3830905815
+Elapsed time = 51.0 millsec
+1780544.3830905815
+Elapsed time = 54.0 millsec
 SystemDS Statistics:
-Total elapsed time:		3.432 sec.
-Total compilation time:		0.549 sec.
-Total execution time:		2.883 sec.
+Total elapsed time:		3.352 sec.
+Total compilation time:		0.590 sec.
+Total execution time:		2.763 sec.
 Cache hits (Mem/Li/WB/FS/HDFS):	20/0/0/0/3.
 Cache writes (Li/WB/FS/HDFS):	0/1/0/1.
-Cache times (ACQr/m, RLS, EXP):	1.755/0.000/0.001/0.043 sec.
+Cache times (ACQr/m, RLS, EXP):	1.604/0.000/0.001/0.040 sec.
 HOP DAGs recompiled (PRED, SB):	0/2.
 HOP DAGs recompile time:	0.010 sec.
 TransformEncode num. encoders:	1
 TransformEncode build time:	0.000 sec.
-TransformEncode apply time:	9.013 sec.
-	WordEmbedding apply time:	9.013 sec.
+TransformEncode apply time:	14.953 sec.
+	WordEmbedding apply time:	14.953 sec.
 TransformEncode PreProc. time:	0.004 sec.
-TransformEncode PostProc. time:	0.122 sec.
-Total JIT compile time:		5.913 sec.
+TransformEncode PostProc. time:	0.141 sec.
+Total JIT compile time:		5.432 sec.
 Total JVM GC count:		1.
-Total JVM GC time:		0.021 sec.
+Total JVM GC time:		0.013 sec.
 Heavy hitter instructions:
   #  Instruction     Time(s)  Count
-  1  rightIndex        1.714      3
-  2  transformapply    0.951      1
-  3  uak+              0.076      6
-  4  ncol              0.044      2
-  5  write             0.043      1
-  6  time              0.014     16
-  7  toString          0.008      3
+  1  rightIndex        1.583      3
+  2  transformapply    0.605      1
+  3  uak+              0.455      6
+  4  write             0.040      1
+  5  ncol              0.024      2
+  6  time              0.015     16
+  7  toString          0.007      3
   8  +                 0.005     24
-  9  rand              0.004      1
- 10  floor             0.004      7
+  9  floor             0.005      7
+ 10  rand              0.003      1
 
 java -Xmx210g -Xms210g -Xmn21g             -cp target6/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t_fullsum.dml             -stats             -exec singlenode             -args data/words2_50_20.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-full-sum/2.csv
 0.148
@@ -70,51 +70,51 @@ flash
 .·1
 
 (1001360, 300)
-Elapsed time for transform = 613.0 millsec
+Elapsed time for transform = 601.0 millsec
 thread: 48
 1780544.3830905815
-Elapsed time = 350.0 millsec
+Elapsed time = 397.0 millsec
 thread: 48
 1780544.3830905815
-Elapsed time = 58.0 millsec
+Elapsed time = 97.0 millsec
 thread: 48
 1780544.3830905815
-Elapsed time = 58.0 millsec
-thread: 48
-1780544.3830905815
-Elapsed time = 58.0 millsec
+Elapsed time = 56.0 millsec
 thread: 48
 1780544.3830905815
 Elapsed time = 57.0 millsec
 thread: 48
 1780544.3830905815
+Elapsed time = 59.0 millsec
+thread: 48
+1780544.3830905815
 Elapsed time = 58.0 millsec
 SystemDS Statistics:
-Total elapsed time:		3.974 sec.
-Total compilation time:		0.619 sec.
-Total execution time:		3.354 sec.
+Total elapsed time:		3.742 sec.
+Total compilation time:		0.584 sec.
+Total execution time:		3.158 sec.
 Cache hits (Mem/Li/WB/FS/HDFS):	20/0/0/0/3.
 Cache writes (Li/WB/FS/HDFS):	0/1/0/1.
-Cache times (ACQr/m, RLS, EXP):	2.009/0.000/0.001/0.042 sec.
+Cache times (ACQr/m, RLS, EXP):	1.738/0.000/0.001/0.043 sec.
 HOP DAGs recompiled (PRED, SB):	0/2.
-HOP DAGs recompile time:	0.011 sec.
+HOP DAGs recompile time:	0.009 sec.
 TransformEncode num. encoders:	1
 TransformEncode build time:	0.000 sec.
-TransformEncode apply time:	11.031 sec.
-	WordEmbedding apply time:	11.031 sec.
-TransformEncode PreProc. time:	0.005 sec.
-TransformEncode PostProc. time:	0.130 sec.
-Total JIT compile time:		5.764 sec.
+TransformEncode apply time:	10.757 sec.
+	WordEmbedding apply time:	10.757 sec.
+TransformEncode PreProc. time:	0.004 sec.
+TransformEncode PostProc. time:	0.134 sec.
+Total JIT compile time:		5.437 sec.
 Total JVM GC count:		1.
-Total JVM GC time:		0.02 sec.
+Total JVM GC time:		0.015 sec.
 Heavy hitter instructions:
   #  Instruction     Time(s)  Count
-  1  rightIndex        1.966      3
-  2  uak+              0.640      6
-  3  transformapply    0.603      1
-  4  ncol              0.046      2
-  5  write             0.042      1
-  6  time              0.014     16
+  1  rightIndex        1.697      3
+  2  uak+              0.727      6
+  3  transformapply    0.593      1
+  4  ncol              0.044      2
+  5  write             0.043      1
+  6  time              0.012     16
   7  toString          0.009      3
   8  +                 0.005     24
   9  floor             0.004      7
@@ -134,48 +134,48 @@ universalist
 .·1
 
 (5006800, 300)
-Elapsed time for transform = 2331.0 millsec
-0.0
-Elapsed time = 51.0 millsec
-0.0
-Elapsed time = 37.0 millsec
-0.0
-Elapsed time = 38.0 millsec
-0.0
-Elapsed time = 15.0 millsec
-0.0
-Elapsed time = 10.0 millsec
-0.0
-Elapsed time = 11.0 millsec
+Elapsed time for transform = 1174.0 millsec
+8902721.915452907
+Elapsed time = 414.0 millsec
+8902721.915452907
+Elapsed time = 249.0 millsec
+8902721.915452907
+Elapsed time = 249.0 millsec
+8902721.915452907
+Elapsed time = 243.0 millsec
+8902721.915452907
+Elapsed time = 219.0 millsec
+8902721.915452907
+Elapsed time = 200.0 millsec
 SystemDS Statistics:
-Total elapsed time:		5.648 sec.
-Total compilation time:		0.605 sec.
-Total execution time:		5.043 sec.
+Total elapsed time:		5.863 sec.
+Total compilation time:		0.574 sec.
+Total execution time:		5.289 sec.
 Cache hits (Mem/Li/WB/FS/HDFS):	20/0/0/0/3.
 Cache writes (Li/WB/FS/HDFS):	0/1/0/1.
-Cache times (ACQr/m, RLS, EXP):	2.439/0.000/0.002/0.055 sec.
+Cache times (ACQr/m, RLS, EXP):	2.445/0.000/0.001/0.042 sec.
 HOP DAGs recompiled (PRED, SB):	0/2.
-HOP DAGs recompile time:	0.010 sec.
+HOP DAGs recompile time:	0.011 sec.
 TransformEncode num. encoders:	1
 TransformEncode build time:	0.000 sec.
-TransformEncode apply time:	24.672 sec.
-	WordEmbedding apply time:	24.672 sec.
+TransformEncode apply time:	37.525 sec.
+	WordEmbedding apply time:	37.525 sec.
 TransformEncode PreProc. time:	0.013 sec.
-TransformEncode PostProc. time:	0.211 sec.
-Total JIT compile time:		6.301 sec.
+TransformEncode PostProc. time:	0.231 sec.
+Total JIT compile time:		5.686 sec.
 Total JVM GC count:		1.
-Total JVM GC time:		0.014 sec.
+Total JVM GC time:		0.017 sec.
 Heavy hitter instructions:
   #  Instruction     Time(s)  Count
-  1  rightIndex        2.413      3
-  2  transformapply    2.322      1
-  3  uak+              0.163      6
-  4  write             0.055      1
+  1  rightIndex        2.417      3
+  2  uak+              1.576      6
+  3  transformapply    1.166      1
+  4  write             0.043      1
   5  ncol              0.030      2
   6  time              0.015     16
-  7  toString          0.008      3
-  8  floor             0.007      7
-  9  +                 0.006     24
+  7  toString          0.009      3
+  8  +                 0.005     24
+  9  floor             0.004      7
  10  rand              0.003      1
 
 java -Xmx210g -Xms210g -Xmn21g             -cp target6/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t_fullsum.dml             -stats             -exec singlenode             -args data/words2_50_100.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-full-sum/4.csv
@@ -192,55 +192,55 @@ universalist
 .·1
 
 (5006800, 300)
-Elapsed time for transform = 1288.0 millsec
+Elapsed time for transform = 1365.0 millsec
 thread: 48
 8902721.915452907
-Elapsed time = 629.0 millsec
+Elapsed time = 837.0 millsec
 thread: 48
 8902721.915452907
-Elapsed time = 295.0 millsec
+Elapsed time = 258.0 millsec
 thread: 48
 8902721.915452907
-Elapsed time = 277.0 millsec
+Elapsed time = 229.0 millsec
 thread: 48
 8902721.915452907
-Elapsed time = 241.0 millsec
+Elapsed time = 210.0 millsec
 thread: 48
 8902721.915452907
-Elapsed time = 206.0 millsec
+Elapsed time = 192.0 millsec
 thread: 48
 8902721.915452907
-Elapsed time = 208.0 millsec
+Elapsed time = 192.0 millsec
 SystemDS Statistics:
-Total elapsed time:		6.374 sec.
-Total compilation time:		0.542 sec.
-Total execution time:		5.832 sec.
+Total elapsed time:		6.556 sec.
+Total compilation time:		0.585 sec.
+Total execution time:		5.971 sec.
 Cache hits (Mem/Li/WB/FS/HDFS):	20/0/0/0/3.
 Cache writes (Li/WB/FS/HDFS):	0/1/0/1.
-Cache times (ACQr/m, RLS, EXP):	2.600/0.000/0.002/0.034 sec.
+Cache times (ACQr/m, RLS, EXP):	2.601/0.000/0.001/0.033 sec.
 HOP DAGs recompiled (PRED, SB):	0/2.
-HOP DAGs recompile time:	0.013 sec.
+HOP DAGs recompile time:	0.011 sec.
 TransformEncode num. encoders:	1
 TransformEncode build time:	0.000 sec.
-TransformEncode apply time:	34.677 sec.
-	WordEmbedding apply time:	34.677 sec.
-TransformEncode PreProc. time:	0.016 sec.
-TransformEncode PostProc. time:	0.216 sec.
-Total JIT compile time:		6.092 sec.
+TransformEncode apply time:	37.722 sec.
+	WordEmbedding apply time:	37.722 sec.
+TransformEncode PreProc. time:	0.017 sec.
+TransformEncode PostProc. time:	0.218 sec.
+Total JIT compile time:		6.127 sec.
 Total JVM GC count:		1.
-Total JVM GC time:		0.021 sec.
+Total JVM GC time:		0.022 sec.
 Heavy hitter instructions:
   #  Instruction     Time(s)  Count
-  1  rightIndex        2.571      3
-  2  uak+              1.858      6
-  3  transformapply    1.279      1
-  4  write             0.034      1
+  1  rightIndex        2.572      3
+  2  uak+              1.919      6
+  3  transformapply    1.356      1
+  4  write             0.033      1
   5  ncol              0.032      2
-  6  time              0.014     16
+  6  time              0.017     16
   7  toString          0.008      3
   8  +                 0.005     24
   9  floor             0.004      7
- 10  rand              0.004      1
+ 10  rand              0.003      1
 
 java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t_fullsum.dml             -stats             -exec singlenode             -args data/words2_50_300.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-full-sum/5.csv
 0.148
@@ -256,48 +256,48 @@ echl
 .·1
 
 (15020400, 300)
-Elapsed time for transform = 4150.0 millsec
-0.0
-Elapsed time = 34.0 millsec
-0.0
-Elapsed time = 16.0 millsec
-0.0
-Elapsed time = 12.0 millsec
-0.0
-Elapsed time = 12.0 millsec
-0.0
-Elapsed time = 13.0 millsec
-0.0
-Elapsed time = 12.0 millsec
+Elapsed time for transform = 2426.0 millsec
+2.6708165746358722E7
+Elapsed time = 906.0 millsec
+2.6708165746358722E7
+Elapsed time = 754.0 millsec
+2.6708165746358722E7
+Elapsed time = 603.0 millsec
+2.6708165746358722E7
+Elapsed time = 582.0 millsec
+2.6708165746358722E7
+Elapsed time = 597.0 millsec
+2.6708165746358722E7
+Elapsed time = 592.0 millsec
 SystemDS Statistics:
-Total elapsed time:		8.434 sec.
-Total compilation time:		0.535 sec.
-Total execution time:		7.899 sec.
+Total elapsed time:		10.160 sec.
+Total compilation time:		0.561 sec.
+Total execution time:		9.599 sec.
 Cache hits (Mem/Li/WB/FS/HDFS):	20/0/0/0/3.
 Cache writes (Li/WB/FS/HDFS):	0/1/0/1.
-Cache times (ACQr/m, RLS, EXP):	3.543/0.000/0.002/0.053 sec.
+Cache times (ACQr/m, RLS, EXP):	3.051/0.000/0.001/0.042 sec.
 HOP DAGs recompiled (PRED, SB):	0/2.
-HOP DAGs recompile time:	0.012 sec.
+HOP DAGs recompile time:	0.009 sec.
 TransformEncode num. encoders:	1
 TransformEncode build time:	0.000 sec.
-TransformEncode apply time:	32.730 sec.
-	WordEmbedding apply time:	32.730 sec.
+TransformEncode apply time:	74.988 sec.
+	WordEmbedding apply time:	74.988 sec.
 TransformEncode PreProc. time:	0.044 sec.
-TransformEncode PostProc. time:	0.517 sec.
-Total JIT compile time:		6.708 sec.
+TransformEncode PostProc. time:	0.531 sec.
+Total JIT compile time:		5.219 sec.
 Total JVM GC count:		1.
-Total JVM GC time:		0.017 sec.
+Total JVM GC time:		0.014 sec.
 Heavy hitter instructions:
   #  Instruction     Time(s)  Count
-  1  transformapply    4.138      1
-  2  rightIndex        3.516      3
-  3  uak+              0.102      6
-  4  write             0.053      1
-  5  ncol              0.031      2
-  6  time              0.016     16
-  7  toString          0.006      3
-  8  +                 0.006     24
-  9  floor             0.005      7
+  1  uak+              4.035      6
+  2  rightIndex        3.028      3
+  3  transformapply    2.417      1
+  4  write             0.042      1
+  5  ncol              0.025      2
+  6  time              0.013     16
+  7  toString          0.007      3
+  8  +                 0.005     24
+  9  floor             0.004      7
  10  rand              0.003      1
 
 java -Xmx210g -Xms210g -Xmn21g             -cp target6/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t_fullsum.dml             -stats             -exec singlenode             -args data/words2_50_300.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-full-sum/6.csv
@@ -314,55 +314,55 @@ echl
 .·1
 
 (15020400, 300)
-Elapsed time for transform = 2416.0 millsec
+Elapsed time for transform = 2166.0 millsec
 thread: 48
 2.6708165746358722E7
-Elapsed time = 1059.0 millsec
+Elapsed time = 1025.0 millsec
 thread: 48
 2.6708165746358722E7
-Elapsed time = 692.0 millsec
+Elapsed time = 675.0 millsec
 thread: 48
 2.6708165746358722E7
-Elapsed time = 563.0 millsec
+Elapsed time = 561.0 millsec
 thread: 48
 2.6708165746358722E7
-Elapsed time = 503.0 millsec
+Elapsed time = 513.0 millsec
 thread: 48
 2.6708165746358722E7
-Elapsed time = 520.0 millsec
+Elapsed time = 492.0 millsec
 thread: 48
 2.6708165746358722E7
-Elapsed time = 501.0 millsec
+Elapsed time = 513.0 millsec
 SystemDS Statistics:
-Total elapsed time:		10.230 sec.
-Total compilation time:		0.522 sec.
-Total execution time:		9.709 sec.
+Total elapsed time:		9.996 sec.
+Total compilation time:		0.524 sec.
+Total execution time:		9.471 sec.
 Cache hits (Mem/Li/WB/FS/HDFS):	20/0/0/0/3.
 Cache writes (Li/WB/FS/HDFS):	0/1/0/1.
-Cache times (ACQr/m, RLS, EXP):	3.370/0.000/0.002/0.037 sec.
+Cache times (ACQr/m, RLS, EXP):	3.442/0.000/0.001/0.038 sec.
 HOP DAGs recompiled (PRED, SB):	0/2.
-HOP DAGs recompile time:	0.011 sec.
+HOP DAGs recompile time:	0.009 sec.
 TransformEncode num. encoders:	1
 TransformEncode build time:	0.000 sec.
-TransformEncode apply time:	73.204 sec.
-	WordEmbedding apply time:	73.204 sec.
-TransformEncode PreProc. time:	0.046 sec.
-TransformEncode PostProc. time:	0.439 sec.
-Total JIT compile time:		5.776 sec.
+TransformEncode apply time:	66.959 sec.
+	WordEmbedding apply time:	66.959 sec.
+TransformEncode PreProc. time:	0.036 sec.
+TransformEncode PostProc. time:	0.376 sec.
+Total JIT compile time:		6.34 sec.
 Total JVM GC count:		1.
-Total JVM GC time:		0.022 sec.
+Total JVM GC time:		0.015 sec.
 Heavy hitter instructions:
   #  Instruction     Time(s)  Count
-  1  uak+              3.839      6
-  2  rightIndex        3.341      3
-  3  transformapply    2.406      1
-  4  write             0.037      1
+  1  uak+              3.781      6
+  2  rightIndex        3.412      3
+  3  transformapply    2.158      1
+  4  write             0.039      1
   5  ncol              0.033      2
-  6  time              0.013     16
+  6  time              0.012     16
   7  toString          0.007      3
-  8  +                 0.005     24
-  9  rand              0.004      1
- 10  floor             0.004      7
+  8  +                 0.004     24
+  9  floor             0.004      7
+ 10  rand              0.003      1
 
 java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t_fullsum.dml             -stats             -exec singlenode             -args data/words2_50_600.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-full-sum/7.csv
 0.148
@@ -378,49 +378,49 @@ jukebox
 .·1
 
 (30040800, 300)
-Elapsed time for transform = 5627.0 millsec
-0.0
-Elapsed time = 47.0 millsec
-0.0
-Elapsed time = 40.0 millsec
-0.0
-Elapsed time = 25.0 millsec
-0.0
-Elapsed time = 11.0 millsec
-0.0
-Elapsed time = 11.0 millsec
-0.0
-Elapsed time = 11.0 millsec
+Elapsed time for transform = 4282.0 millsec
+5.3416331492717445E7
+Elapsed time = 1621.0 millsec
+5.3416331492717445E7
+Elapsed time = 1159.0 millsec
+5.3416331492717445E7
+Elapsed time = 1171.0 millsec
+5.3416331492717445E7
+Elapsed time = 1186.0 millsec
+5.3416331492717445E7
+Elapsed time = 1199.0 millsec
+5.3416331492717445E7
+Elapsed time = 1180.0 millsec
 SystemDS Statistics:
-Total elapsed time:		11.602 sec.
-Total compilation time:		0.619 sec.
-Total execution time:		10.984 sec.
+Total elapsed time:		17.061 sec.
+Total compilation time:		0.593 sec.
+Total execution time:		16.468 sec.
 Cache hits (Mem/Li/WB/FS/HDFS):	20/0/0/0/3.
 Cache writes (Li/WB/FS/HDFS):	0/1/0/1.
-Cache times (ACQr/m, RLS, EXP):	5.107/0.000/0.002/0.054 sec.
+Cache times (ACQr/m, RLS, EXP):	4.586/0.000/0.001/0.038 sec.
 HOP DAGs recompiled (PRED, SB):	0/2.
-HOP DAGs recompile time:	0.010 sec.
+HOP DAGs recompile time:	0.009 sec.
 TransformEncode num. encoders:	1
 TransformEncode build time:	0.000 sec.
-TransformEncode apply time:	33.593 sec.
-	WordEmbedding apply time:	33.593 sec.
-TransformEncode PreProc. time:	0.089 sec.
-TransformEncode PostProc. time:	0.867 sec.
-Total JIT compile time:		6.833 sec.
+TransformEncode apply time:	153.697 sec.
+	WordEmbedding apply time:	153.697 sec.
+TransformEncode PreProc. time:	0.069 sec.
+TransformEncode PostProc. time:	0.551 sec.
+Total JIT compile time:		5.518 sec.
 Total JVM GC count:		1.
-Total JVM GC time:		0.014 sec.
+Total JVM GC time:		0.015 sec.
 Heavy hitter instructions:
   #  Instruction     Time(s)  Count
-  1  transformapply    5.617      1
-  2  rightIndex        5.071      3
-  3  uak+              0.145      6
-  4  write             0.054      1
-  5  ncol              0.038      2
-  6  time              0.015     16
+  1  uak+              7.518      6
+  2  rightIndex        4.557      3
+  3  transformapply    4.275      1
+  4  write             0.039      1
+  5  ncol              0.031      2
+  6  time              0.014     16
   7  toString          0.006      3
-  8  +                 0.005     24
-  9  floor             0.005      7
- 10  rand              0.004      1
+  8  +                 0.004     24
+  9  floor             0.003      7
+ 10  rand              0.003      1
 
 java -Xmx210g -Xms210g -Xmn21g             -cp target6/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t_fullsum.dml             -stats             -exec singlenode             -args data/words2_50_600.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-full-sum/8.csv
 0.148
@@ -436,55 +436,55 @@ jukebox
 .·1
 
 (30040800, 300)
-Elapsed time for transform = 3611.0 millsec
+Elapsed time for transform = 3620.0 millsec
 thread: 48
 5.3416331492717445E7
-Elapsed time = 1585.0 millsec
+Elapsed time = 1481.0 millsec
 thread: 48
 5.3416331492717445E7
-Elapsed time = 904.0 millsec
+Elapsed time = 908.0 millsec
 thread: 48
 5.3416331492717445E7
-Elapsed time = 782.0 millsec
+Elapsed time = 825.0 millsec
 thread: 48
 5.3416331492717445E7
-Elapsed time = 779.0 millsec
+Elapsed time = 802.0 millsec
 thread: 48
 5.3416331492717445E7
-Elapsed time = 799.0 millsec
+Elapsed time = 815.0 millsec
 thread: 48
 5.3416331492717445E7
-Elapsed time = 780.0 millsec
+Elapsed time = 795.0 millsec
 SystemDS Statistics:
-Total elapsed time:		14.368 sec.
-Total compilation time:		0.613 sec.
-Total execution time:		13.754 sec.
+Total elapsed time:		14.645 sec.
+Total compilation time:		0.603 sec.
+Total execution time:		14.043 sec.
 Cache hits (Mem/Li/WB/FS/HDFS):	20/0/0/0/3.
 Cache writes (Li/WB/FS/HDFS):	0/1/0/1.
-Cache times (ACQr/m, RLS, EXP):	4.426/0.000/0.001/0.040 sec.
+Cache times (ACQr/m, RLS, EXP):	4.711/0.000/0.001/0.039 sec.
 HOP DAGs recompiled (PRED, SB):	0/2.
-HOP DAGs recompile time:	0.008 sec.
+HOP DAGs recompile time:	0.010 sec.
 TransformEncode num. encoders:	1
 TransformEncode build time:	0.000 sec.
-TransformEncode apply time:	109.993 sec.
-	WordEmbedding apply time:	109.993 sec.
+TransformEncode apply time:	115.139 sec.
+	WordEmbedding apply time:	115.139 sec.
 TransformEncode PreProc. time:	0.069 sec.
-TransformEncode PostProc. time:	0.752 sec.
-Total JIT compile time:		6.372 sec.
+TransformEncode PostProc. time:	0.586 sec.
+Total JIT compile time:		5.919 sec.
 Total JVM GC count:		1.
 Total JVM GC time:		0.014 sec.
 Heavy hitter instructions:
   #  Instruction     Time(s)  Count
-  1  uak+              5.629      6
-  2  rightIndex        4.393      3
-  3  transformapply    3.604      1
-  4  write             0.040      1
-  5  ncol              0.036      2
-  6  time              0.015     16
-  7  toString          0.007      3
+  1  uak+              5.627      6
+  2  rightIndex        4.686      3
+  3  transformapply    3.613      1
+  4  write             0.039      1
+  5  ncol              0.028      2
+  6  time              0.014     16
+  7  toString          0.006      3
   8  +                 0.004     24
-  9  floor             0.004      7
- 10  rand              0.003      1
+  9  rand              0.003      1
+ 10  floor             0.003      7
 
 java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t_fullsum.dml             -stats             -exec singlenode             -args data/words2_50_900.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-full-sum/9.csv
 0.148
@@ -500,49 +500,49 @@ staircase
 .·1
 
 (45061200, 300)
-Elapsed time for transform = 7228.0 millsec
-0.0
-Elapsed time = 48.0 millsec
-0.0
-Elapsed time = 41.0 millsec
-0.0
-Elapsed time = 43.0 millsec
-0.0
-Elapsed time = 13.0 millsec
-0.0
-Elapsed time = 12.0 millsec
-0.0
-Elapsed time = 10.0 millsec
+Elapsed time for transform = 5977.0 millsec
+8.012449723907617E7
+Elapsed time = 2349.0 millsec
+8.012449723907617E7
+Elapsed time = 1727.0 millsec
+8.012449723907617E7
+Elapsed time = 1784.0 millsec
+8.012449723907617E7
+Elapsed time = 1791.0 millsec
+8.012449723907617E7
+Elapsed time = 1783.0 millsec
+8.012449723907617E7
+Elapsed time = 1759.0 millsec
 SystemDS Statistics:
-Total elapsed time:		13.701 sec.
-Total compilation time:		0.511 sec.
-Total execution time:		13.190 sec.
+Total elapsed time:		23.754 sec.
+Total compilation time:		0.566 sec.
+Total execution time:		23.188 sec.
 Cache hits (Mem/Li/WB/FS/HDFS):	20/0/0/0/3.
 Cache writes (Li/WB/FS/HDFS):	0/1/0/1.
-Cache times (ACQr/m, RLS, EXP):	5.702/0.000/0.001/0.047 sec.
+Cache times (ACQr/m, RLS, EXP):	5.932/0.000/0.001/0.038 sec.
 HOP DAGs recompiled (PRED, SB):	0/2.
-HOP DAGs recompile time:	0.010 sec.
+HOP DAGs recompile time:	0.012 sec.
 TransformEncode num. encoders:	1
 TransformEncode build time:	0.000 sec.
-TransformEncode apply time:	42.327 sec.
-	WordEmbedding apply time:	42.327 sec.
-TransformEncode PreProc. time:	0.128 sec.
-TransformEncode PostProc. time:	1.255 sec.
-Total JIT compile time:		5.75 sec.
+TransformEncode apply time:	181.293 sec.
+	WordEmbedding apply time:	181.293 sec.
+TransformEncode PreProc. time:	0.124 sec.
+TransformEncode PostProc. time:	1.393 sec.
+Total JIT compile time:		6.278 sec.
 Total JVM GC count:		1.
-Total JVM GC time:		0.014 sec.
+Total JVM GC time:		0.016 sec.
 Heavy hitter instructions:
   #  Instruction     Time(s)  Count
-  1  transformapply    7.220      1
-  2  rightIndex        5.665      3
-  3  uak+              0.168      6
-  4  write             0.047      1
-  5  ncol              0.039      2
-  6  time              0.013     16
+  1  uak+             11.194      6
+  2  transformapply    5.968      1
+  3  rightIndex        5.906      3
+  4  write             0.038      1
+  5  ncol              0.029      2
+  6  time              0.015     16
   7  toString          0.006      3
   8  +                 0.004     24
-  9  rand              0.004      1
- 10  floor             0.004      7
+  9  floor             0.004      7
+ 10  rand              0.003      1
 
 java -Xmx210g -Xms210g -Xmn21g             -cp target6/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t_fullsum.dml             -stats             -exec singlenode             -args data/words2_50_900.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-full-sum/10.csv
 0.148
@@ -558,51 +558,51 @@ staircase
 .·1
 
 (45061200, 300)
-Elapsed time for transform = 5584.0 millsec
+Elapsed time for transform = 4874.0 millsec
 thread: 48
 8.012449723907617E7
-Elapsed time = 1606.0 millsec
+Elapsed time = 1711.0 millsec
 thread: 48
 8.012449723907617E7
-Elapsed time = 1049.0 millsec
+Elapsed time = 990.0 millsec
 thread: 48
 8.012449723907617E7
-Elapsed time = 928.0 millsec
+Elapsed time = 912.0 millsec
 thread: 48
 8.012449723907617E7
-Elapsed time = 890.0 millsec
+Elapsed time = 919.0 millsec
 thread: 48
 8.012449723907617E7
-Elapsed time = 1396.0 millsec
+Elapsed time = 1497.0 millsec
 thread: 48
 8.012449723907617E7
-Elapsed time = 864.0 millsec
+Elapsed time = 854.0 millsec
 SystemDS Statistics:
-Total elapsed time:		17.833 sec.
-Total compilation time:		0.527 sec.
-Total execution time:		17.306 sec.
+Total elapsed time:		18.022 sec.
+Total compilation time:		0.637 sec.
+Total execution time:		17.384 sec.
 Cache hits (Mem/Li/WB/FS/HDFS):	20/0/0/0/3.
 Cache writes (Li/WB/FS/HDFS):	0/1/0/1.
-Cache times (ACQr/m, RLS, EXP):	4.902/0.000/0.001/0.035 sec.
+Cache times (ACQr/m, RLS, EXP):	5.545/0.000/0.001/0.036 sec.
 HOP DAGs recompiled (PRED, SB):	0/2.
-HOP DAGs recompile time:	0.010 sec.
+HOP DAGs recompile time:	0.009 sec.
 TransformEncode num. encoders:	1
 TransformEncode build time:	0.000 sec.
-TransformEncode apply time:	166.720 sec.
-	WordEmbedding apply time:	166.720 sec.
-TransformEncode PreProc. time:	0.124 sec.
-TransformEncode PostProc. time:	1.188 sec.
-Total JIT compile time:		5.898 sec.
+TransformEncode apply time:	146.267 sec.
+	WordEmbedding apply time:	146.267 sec.
+TransformEncode PreProc. time:	0.100 sec.
+TransformEncode PostProc. time:	1.128 sec.
+Total JIT compile time:		5.547 sec.
 Total JVM GC count:		2.
-Total JVM GC time:		0.524 sec.
+Total JVM GC time:		0.548 sec.
 Heavy hitter instructions:
   #  Instruction     Time(s)  Count
-  1  uak+              6.734      6
-  2  transformapply    5.576      1
-  3  rightIndex        4.860      3
-  4  ncol              0.045      2
-  5  write             0.035      1
-  6  time              0.018     16
+  1  uak+              6.884      6
+  2  rightIndex        5.519      3
+  3  transformapply    4.867      1
+  4  write             0.036      1
+  5  ncol              0.028      2
+  6  time              0.014     16
   7  toString          0.007      3
   8  +                 0.004     24
   9  floor             0.003      7
@@ -622,45 +622,45 @@ budget
 .·1
 
 (60081600, 300)
-Elapsed time for transform = 8498.0 millsec
-0.0
-Elapsed time = 41.0 millsec
-0.0
-Elapsed time = 13.0 millsec
-0.0
-Elapsed time = 12.0 millsec
-0.0
-Elapsed time = 11.0 millsec
-0.0
-Elapsed time = 12.0 millsec
-0.0
-Elapsed time = 11.0 millsec
+Elapsed time for transform = 6823.0 millsec
+1.0683266298543489E8
+Elapsed time = 2793.0 millsec
+1.0683266298543489E8
+Elapsed time = 2366.0 millsec
+1.0683266298543489E8
+Elapsed time = 2320.0 millsec
+1.0683266298543489E8
+Elapsed time = 2352.0 millsec
+1.0683266298543489E8
+Elapsed time = 2362.0 millsec
+1.0683266298543489E8
+Elapsed time = 2365.0 millsec
 SystemDS Statistics:
-Total elapsed time:		15.366 sec.
-Total compilation time:		0.547 sec.
-Total execution time:		14.820 sec.
+Total elapsed time:		27.836 sec.
+Total compilation time:		0.646 sec.
+Total execution time:		27.190 sec.
 Cache hits (Mem/Li/WB/FS/HDFS):	20/0/0/0/3.
 Cache writes (Li/WB/FS/HDFS):	0/1/0/1.
-Cache times (ACQr/m, RLS, EXP):	6.118/0.000/0.001/0.052 sec.
+Cache times (ACQr/m, RLS, EXP):	5.723/0.000/0.001/0.037 sec.
 HOP DAGs recompiled (PRED, SB):	0/2.
 HOP DAGs recompile time:	0.010 sec.
 TransformEncode num. encoders:	1
 TransformEncode build time:	0.000 sec.
-TransformEncode apply time:	34.352 sec.
-	WordEmbedding apply time:	34.352 sec.
-TransformEncode PreProc. time:	0.131 sec.
-TransformEncode PostProc. time:	1.644 sec.
-Total JIT compile time:		5.817 sec.
-Total JVM GC count:		2.
-Total JVM GC time:		0.563 sec.
+TransformEncode apply time:	206.039 sec.
+	WordEmbedding apply time:	206.039 sec.
+TransformEncode PreProc. time:	0.133 sec.
+TransformEncode PostProc. time:	1.694 sec.
+Total JIT compile time:		5.537 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.022 sec.
 Heavy hitter instructions:
   #  Instruction     Time(s)  Count
-  1  transformapply    8.491      1
-  2  rightIndex        6.092      3
-  3  uak+              0.102      6
-  4  write             0.053      1
+  1  uak+             14.559      6
+  2  transformapply    6.816      1
+  3  rightIndex        5.696      3
+  4  write             0.037      1
   5  ncol              0.030      2
-  6  time              0.016     16
+  6  time              0.015     16
   7  toString          0.007      3
   8  +                 0.004     24
   9  rand              0.003      1
@@ -680,52 +680,52 @@ budget
 .·1
 
 (60081600, 300)
-Elapsed time for transform = 6705.0 millsec
+Elapsed time for transform = 6739.0 millsec
 thread: 48
 1.0683266298543489E8
-Elapsed time = 1496.0 millsec
+Elapsed time = 1722.0 millsec
 thread: 48
 1.0683266298543489E8
-Elapsed time = 1137.0 millsec
+Elapsed time = 1027.0 millsec
 thread: 48
 1.0683266298543489E8
-Elapsed time = 923.0 millsec
+Elapsed time = 927.0 millsec
 thread: 48
 1.0683266298543489E8
-Elapsed time = 908.0 millsec
+Elapsed time = 1961.0 millsec
 thread: 48
 1.0683266298543489E8
-Elapsed time = 904.0 millsec
+Elapsed time = 862.0 millsec
 thread: 48
 1.0683266298543489E8
-Elapsed time = 911.0 millsec
+Elapsed time = 888.0 millsec
 SystemDS Statistics:
-Total elapsed time:		19.785 sec.
-Total compilation time:		0.584 sec.
-Total execution time:		19.201 sec.
+Total elapsed time:		19.841 sec.
+Total compilation time:		0.514 sec.
+Total execution time:		19.327 sec.
 Cache hits (Mem/Li/WB/FS/HDFS):	20/0/0/0/3.
 Cache writes (Li/WB/FS/HDFS):	0/1/0/1.
-Cache times (ACQr/m, RLS, EXP):	6.127/0.000/0.001/0.042 sec.
+Cache times (ACQr/m, RLS, EXP):	5.119/0.000/0.001/0.034 sec.
 HOP DAGs recompiled (PRED, SB):	0/2.
-HOP DAGs recompile time:	0.009 sec.
+HOP DAGs recompile time:	0.011 sec.
 TransformEncode num. encoders:	1
 TransformEncode build time:	0.000 sec.
-TransformEncode apply time:	196.961 sec.
-	WordEmbedding apply time:	196.961 sec.
-TransformEncode PreProc. time:	0.112 sec.
-TransformEncode PostProc. time:	1.623 sec.
-Total JIT compile time:		5.634 sec.
+TransformEncode apply time:	203.803 sec.
+	WordEmbedding apply time:	203.803 sec.
+TransformEncode PreProc. time:	0.177 sec.
+TransformEncode PostProc. time:	1.505 sec.
+Total JIT compile time:		5.938 sec.
 Total JVM GC count:		2.
-Total JVM GC time:		0.588 sec.
+Total JVM GC time:		0.954 sec.
 Heavy hitter instructions:
   #  Instruction     Time(s)  Count
-  1  transformapply    6.699      1
-  2  uak+              6.281      6
-  3  rightIndex        6.090      3
-  4  write             0.042      1
-  5  ncol              0.039      2
-  6  time              0.014     16
-  7  toString          0.006      3
+  1  uak+              7.388      6
+  2  transformapply    6.731      1
+  3  rightIndex        5.087      3
+  4  ncol              0.034      2
+  5  write             0.034      1
+  6  time              0.015     16
+  7  toString          0.007      3
   8  +                 0.004     24
   9  rand              0.003      1
  10  floor             0.003      7
@@ -744,49 +744,49 @@ alas
 .·1
 
 (75102000, 300)
-Elapsed time for transform = 10985.0 millsec
-0.0
-Elapsed time = 25.0 millsec
-0.0
-Elapsed time = 10.0 millsec
-0.0
-Elapsed time = 9.0 millsec
-0.0
-Elapsed time = 9.0 millsec
-0.0
-Elapsed time = 9.0 millsec
-0.0
-Elapsed time = 9.0 millsec
+Elapsed time for transform = 9772.0 millsec
+1.3354082873179361E8
+Elapsed time = 3393.0 millsec
+1.3354082873179361E8
+Elapsed time = 2924.0 millsec
+1.3354082873179361E8
+Elapsed time = 2895.0 millsec
+1.3354082873179361E8
+Elapsed time = 2906.0 millsec
+1.3354082873179361E8
+Elapsed time = 2884.0 millsec
+1.3354082873179361E8
+Elapsed time = 2890.0 millsec
 SystemDS Statistics:
-Total elapsed time:		19.475 sec.
-Total compilation time:		0.513 sec.
-Total execution time:		18.963 sec.
+Total elapsed time:		34.807 sec.
+Total compilation time:		0.647 sec.
+Total execution time:		34.160 sec.
 Cache hits (Mem/Li/WB/FS/HDFS):	20/0/0/0/3.
 Cache writes (Li/WB/FS/HDFS):	0/1/0/1.
-Cache times (ACQr/m, RLS, EXP):	7.811/0.000/0.001/0.047 sec.
+Cache times (ACQr/m, RLS, EXP):	6.417/0.000/0.002/0.039 sec.
 HOP DAGs recompiled (PRED, SB):	0/2.
-HOP DAGs recompile time:	0.012 sec.
+HOP DAGs recompile time:	0.008 sec.
 TransformEncode num. encoders:	1
 TransformEncode build time:	0.000 sec.
-TransformEncode apply time:	140.795 sec.
-	WordEmbedding apply time:	140.795 sec.
-TransformEncode PreProc. time:	0.221 sec.
-TransformEncode PostProc. time:	1.119 sec.
-Total JIT compile time:		7.836 sec.
-Total JVM GC count:		2.
-Total JVM GC time:		2.149 sec.
+TransformEncode apply time:	312.936 sec.
+	WordEmbedding apply time:	312.936 sec.
+TransformEncode PreProc. time:	0.166 sec.
+TransformEncode PostProc. time:	2.003 sec.
+Total JIT compile time:		5.667 sec.
+Total JVM GC count:		1.
+Total JVM GC time:		0.016 sec.
 Heavy hitter instructions:
   #  Instruction     Time(s)  Count
-  1  transformapply   10.976      1
-  2  rightIndex        7.778      3
-  3  uak+              0.073      6
-  4  write             0.047      1
-  5  ncol              0.035      2
-  6  time              0.016     16
-  7  toString          0.007      3
-  8  +                 0.003     24
-  9  rand              0.003      1
- 10  floor             0.003      7
+  1  uak+             17.893      6
+  2  transformapply    9.766      1
+  3  rightIndex        6.387      3
+  4  write             0.039      1
+  5  ncol              0.032      2
+  6  time              0.012     16
+  7  toString          0.006      3
+  8  +                 0.004     24
+  9  floor             0.003      7
+ 10  rand              0.002      1
 
 java -Xmx210g -Xms210g -Xmn21g             -cp target6/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t_fullsum.dml             -stats             -exec singlenode             -args data/words2_50_1500.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-full-sum/14.csv
 0.148
@@ -802,55 +802,55 @@ alas
 .·1
 
 (75102000, 300)
-Elapsed time for transform = 8595.0 millsec
+Elapsed time for transform = 9270.0 millsec
 thread: 48
 1.3354082873179361E8
-Elapsed time = 1648.0 millsec
+Elapsed time = 1680.0 millsec
 thread: 48
 1.3354082873179361E8
-Elapsed time = 2843.0 millsec
+Elapsed time = 2932.0 millsec
 thread: 48
 1.3354082873179361E8
-Elapsed time = 904.0 millsec
+Elapsed time = 919.0 millsec
 thread: 48
 1.3354082873179361E8
-Elapsed time = 912.0 millsec
+Elapsed time = 906.0 millsec
 thread: 48
 1.3354082873179361E8
-Elapsed time = 916.0 millsec
+Elapsed time = 886.0 millsec
 thread: 48
 1.3354082873179361E8
-Elapsed time = 930.0 millsec
+Elapsed time = 902.0 millsec
 SystemDS Statistics:
-Total elapsed time:		25.912 sec.
-Total compilation time:		0.598 sec.
-Total execution time:		25.314 sec.
+Total elapsed time:		25.462 sec.
+Total compilation time:		0.563 sec.
+Total execution time:		24.898 sec.
 Cache hits (Mem/Li/WB/FS/HDFS):	20/0/0/0/3.
 Cache writes (Li/WB/FS/HDFS):	0/1/0/1.
-Cache times (ACQr/m, RLS, EXP):	8.486/0.000/0.001/0.036 sec.
+Cache times (ACQr/m, RLS, EXP):	7.306/0.000/0.001/0.036 sec.
 HOP DAGs recompiled (PRED, SB):	0/2.
-HOP DAGs recompile time:	0.009 sec.
+HOP DAGs recompile time:	0.019 sec.
 TransformEncode num. encoders:	1
 TransformEncode build time:	0.000 sec.
-TransformEncode apply time:	254.579 sec.
-	WordEmbedding apply time:	254.579 sec.
-TransformEncode PreProc. time:	0.220 sec.
-TransformEncode PostProc. time:	1.925 sec.
-Total JIT compile time:		6.482 sec.
+TransformEncode apply time:	281.660 sec.
+	WordEmbedding apply time:	281.660 sec.
+TransformEncode PreProc. time:	0.165 sec.
+TransformEncode PostProc. time:	1.876 sec.
+Total JIT compile time:		6.296 sec.
 Total JVM GC count:		2.
-Total JVM GC time:		1.578 sec.
+Total JVM GC time:		1.695 sec.
 Heavy hitter instructions:
   #  Instruction     Time(s)  Count
-  1  transformapply    8.588      1
-  2  rightIndex        8.437      3
-  3  uak+              8.154      6
-  4  ncol              0.051      2
-  5  write             0.036      1
-  6  time              0.014     16
+  1  transformapply    9.263      1
+  2  uak+              8.227      6
+  3  rightIndex        7.281      3
+  4  write             0.036      1
+  5  ncol              0.029      2
+  6  time              0.019     16
   7  toString          0.006      3
   8  +                 0.004     24
-  9  floor             0.003      7
- 10  rand              0.003      1
+  9  rand              0.003      1
+ 10  floor             0.003      7
 
 java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t_fullsum.dml             -stats             -exec singlenode             -args data/words2_50_1800.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-full-sum/15.csv
 0.148
@@ -866,49 +866,49 @@ qu
 .·1
 
 (90122400, 300)
-Elapsed time for transform = 11312.0 millsec
-0.0
-Elapsed time = 25.0 millsec
-0.0
-Elapsed time = 10.0 millsec
-0.0
-Elapsed time = 9.0 millsec
-0.0
-Elapsed time = 9.0 millsec
-0.0
-Elapsed time = 9.0 millsec
-0.0
-Elapsed time = 9.0 millsec
+Elapsed time for transform = 9771.0 millsec
+1.6024899447815233E8
+Elapsed time = 4039.0 millsec
+1.6024899447815233E8
+Elapsed time = 3509.0 millsec
+1.6024899447815233E8
+Elapsed time = 3481.0 millsec
+1.6024899447815233E8
+Elapsed time = 3530.0 millsec
+1.6024899447815233E8
+Elapsed time = 3453.0 millsec
+1.6024899447815233E8
+Elapsed time = 3505.0 millsec
 SystemDS Statistics:
-Total elapsed time:		21.192 sec.
-Total compilation time:		0.554 sec.
-Total execution time:		20.638 sec.
+Total elapsed time:		40.778 sec.
+Total compilation time:		0.586 sec.
+Total execution time:		40.193 sec.
 Cache hits (Mem/Li/WB/FS/HDFS):	20/0/0/0/3.
 Cache writes (Li/WB/FS/HDFS):	0/1/0/1.
-Cache times (ACQr/m, RLS, EXP):	9.164/0.000/0.001/0.046 sec.
+Cache times (ACQr/m, RLS, EXP):	8.820/0.000/0.001/0.036 sec.
 HOP DAGs recompiled (PRED, SB):	0/2.
-HOP DAGs recompile time:	0.009 sec.
+HOP DAGs recompile time:	0.012 sec.
 TransformEncode num. encoders:	1
 TransformEncode build time:	0.000 sec.
-TransformEncode apply time:	49.017 sec.
-	WordEmbedding apply time:	49.017 sec.
-TransformEncode PreProc. time:	0.199 sec.
-TransformEncode PostProc. time:	2.117 sec.
-Total JIT compile time:		5.74 sec.
+TransformEncode apply time:	294.203 sec.
+	WordEmbedding apply time:	294.203 sec.
+TransformEncode PreProc. time:	0.242 sec.
+TransformEncode PostProc. time:	2.235 sec.
+Total JIT compile time:		5.557 sec.
 Total JVM GC count:		2.
-Total JVM GC time:		1.418 sec.
+Total JVM GC time:		0.26 sec.
 Heavy hitter instructions:
   #  Instruction     Time(s)  Count
-  1  transformapply   11.306      1
-  2  rightIndex        9.139      3
-  3  uak+              0.072      6
-  4  write             0.046      1
-  5  ncol              0.027      2
-  6  time              0.016     16
+  1  uak+             21.519      6
+  2  transformapply    9.762      1
+  3  rightIndex        8.790      3
+  4  write             0.036      1
+  5  ncol              0.035      2
+  6  time              0.013     16
   7  toString          0.006      3
-  8  +                 0.004     24
-  9  floor             0.003      7
- 10  rand              0.002      1
+  8  rand              0.005      1
+  9  +                 0.003     24
+ 10  floor             0.003      7
 
 java -Xmx210g -Xms210g -Xmn21g             -cp target6/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t_fullsum.dml             -stats             -exec singlenode             -args data/words2_50_1800.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-full-sum/16.csv
 0.148
@@ -924,53 +924,53 @@ qu
 .·1
 
 (90122400, 300)
-Elapsed time for transform = 9391.0 millsec
+Elapsed time for transform = 9898.0 millsec
 thread: 48
 1.6024899447815233E8
-Elapsed time = 2322.0 millsec
+Elapsed time = 1891.0 millsec
 thread: 48
 1.6024899447815233E8
-Elapsed time = 1036.0 millsec
+Elapsed time = 1065.0 millsec
 thread: 48
 1.6024899447815233E8
-Elapsed time = 974.0 millsec
+Elapsed time = 936.0 millsec
 thread: 48
 1.6024899447815233E8
-Elapsed time = 976.0 millsec
+Elapsed time = 934.0 millsec
 thread: 48
 1.6024899447815233E8
-Elapsed time = 1001.0 millsec
+Elapsed time = 927.0 millsec
 thread: 48
 1.6024899447815233E8
-Elapsed time = 970.0 millsec
+Elapsed time = 956.0 millsec
 SystemDS Statistics:
-Total elapsed time:		26.184 sec.
-Total compilation time:		0.597 sec.
-Total execution time:		25.587 sec.
+Total elapsed time:		26.405 sec.
+Total compilation time:		0.580 sec.
+Total execution time:		25.825 sec.
 Cache hits (Mem/Li/WB/FS/HDFS):	20/0/0/0/3.
 Cache writes (Li/WB/FS/HDFS):	0/1/0/1.
-Cache times (ACQr/m, RLS, EXP):	8.838/0.000/0.001/0.031 sec.
+Cache times (ACQr/m, RLS, EXP):	9.133/0.000/0.001/0.036 sec.
 HOP DAGs recompiled (PRED, SB):	0/2.
-HOP DAGs recompile time:	0.009 sec.
+HOP DAGs recompile time:	0.010 sec.
 TransformEncode num. encoders:	1
 TransformEncode build time:	0.000 sec.
-TransformEncode apply time:	284.556 sec.
-	WordEmbedding apply time:	284.556 sec.
-TransformEncode PreProc. time:	0.262 sec.
-TransformEncode PostProc. time:	2.088 sec.
-Total JIT compile time:		6.403 sec.
+TransformEncode apply time:	299.596 sec.
+	WordEmbedding apply time:	299.596 sec.
+TransformEncode PreProc. time:	0.260 sec.
+TransformEncode PostProc. time:	2.156 sec.
+Total JIT compile time:		5.905 sec.
 Total JVM GC count:		2.
-Total JVM GC time:		1.415 sec.
+Total JVM GC time:		1.405 sec.
 Heavy hitter instructions:
   #  Instruction     Time(s)  Count
-  1  transformapply    9.384      1
-  2  rightIndex        8.777      3
-  3  uak+              7.281      6
-  4  ncol              0.064      2
-  5  write             0.031      1
-  6  time              0.018     16
-  7  toString          0.006      3
-  8  +                 0.003     24
+  1  transformapply    9.891      1
+  2  rightIndex        9.095      3
+  3  uak+              6.709      6
+  4  ncol              0.041      2
+  5  write             0.037      1
+  6  time              0.016     16
+  7  toString          0.008      3
+  8  +                 0.004     24
   9  rand              0.003      1
  10  floor             0.003      7
 
@@ -988,49 +988,49 @@ butter
 .·1
 
 (105142800, 300)
-Elapsed time for transform = 12200.0 millsec
-0.0
-Elapsed time = 42.0 millsec
-0.0
-Elapsed time = 39.0 millsec
-0.0
-Elapsed time = 39.0 millsec
-0.0
-Elapsed time = 38.0 millsec
-0.0
-Elapsed time = 40.0 millsec
-0.0
-Elapsed time = 7.0 millsec
+Elapsed time for transform = 11383.0 millsec
+1.8695716022451106E8
+Elapsed time = 4455.0 millsec
+1.8695716022451106E8
+Elapsed time = 4085.0 millsec
+1.8695716022451106E8
+Elapsed time = 4052.0 millsec
+1.8695716022451106E8
+Elapsed time = 4077.0 millsec
+1.8695716022451106E8
+Elapsed time = 4056.0 millsec
+1.8695716022451106E8
+Elapsed time = 4075.0 millsec
 SystemDS Statistics:
-Total elapsed time:		23.266 sec.
-Total compilation time:		0.620 sec.
-Total execution time:		22.647 sec.
+Total elapsed time:		47.237 sec.
+Total compilation time:		0.604 sec.
+Total execution time:		46.633 sec.
 Cache hits (Mem/Li/WB/FS/HDFS):	20/0/0/0/3.
 Cache writes (Li/WB/FS/HDFS):	0/1/0/1.
-Cache times (ACQr/m, RLS, EXP):	10.143/0.000/0.001/0.049 sec.
+Cache times (ACQr/m, RLS, EXP):	10.362/0.000/0.001/0.039 sec.
 HOP DAGs recompiled (PRED, SB):	0/2.
-HOP DAGs recompile time:	0.010 sec.
+HOP DAGs recompile time:	0.009 sec.
 TransformEncode num. encoders:	1
 TransformEncode build time:	0.000 sec.
-TransformEncode apply time:	50.708 sec.
-	WordEmbedding apply time:	50.708 sec.
-TransformEncode PreProc. time:	0.231 sec.
-TransformEncode PostProc. time:	2.408 sec.
-Total JIT compile time:		6.389 sec.
+TransformEncode apply time:	348.731 sec.
+	WordEmbedding apply time:	348.731 sec.
+TransformEncode PreProc. time:	0.193 sec.
+TransformEncode PostProc. time:	2.563 sec.
+Total JIT compile time:		4.885 sec.
 Total JVM GC count:		2.
-Total JVM GC time:		1.407 sec.
+Total JVM GC time:		0.217 sec.
 Heavy hitter instructions:
   #  Instruction     Time(s)  Count
-  1  transformapply   12.194      1
-  2  rightIndex       10.121      3
-  3  uak+              0.206      6
-  4  write             0.049      1
-  5  ncol              0.026      2
+  1  uak+             24.801      6
+  2  transformapply   11.377      1
+  3  rightIndex       10.336      3
+  4  write             0.039      1
+  5  ncol              0.029      2
   6  time              0.016     16
   7  toString          0.007      3
   8  +                 0.003     24
-  9  rand              0.003      1
- 10  floor             0.003      7
+  9  floor             0.003      7
+ 10  rand              0.002      1
 
 java -Xmx210g -Xms210g -Xmn21g             -cp target6/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t_fullsum.dml             -stats             -exec singlenode             -args data/words2_50_2100.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-full-sum/18.csv
 0.148
@@ -1046,55 +1046,55 @@ butter
 .·1
 
 (105142800, 300)
-Elapsed time for transform = 11436.0 millsec
+Elapsed time for transform = 10962.0 millsec
 thread: 48
 1.8695716022451106E8
-Elapsed time = 1681.0 millsec
+Elapsed time = 1752.0 millsec
 thread: 48
 1.8695716022451106E8
-Elapsed time = 1171.0 millsec
+Elapsed time = 1260.0 millsec
 thread: 48
 1.8695716022451106E8
-Elapsed time = 1014.0 millsec
+Elapsed time = 3253.0 millsec
 thread: 48
 1.8695716022451106E8
-Elapsed time = 982.0 millsec
+Elapsed time = 1059.0 millsec
 thread: 48
 1.8695716022451106E8
-Elapsed time = 1031.0 millsec
+Elapsed time = 1049.0 millsec
 thread: 48
 1.8695716022451106E8
-Elapsed time = 999.0 millsec
+Elapsed time = 1038.0 millsec
 SystemDS Statistics:
-Total elapsed time:		29.640 sec.
-Total compilation time:		0.609 sec.
-Total execution time:		29.031 sec.
+Total elapsed time:		31.740 sec.
+Total compilation time:		0.626 sec.
+Total execution time:		31.114 sec.
 Cache hits (Mem/Li/WB/FS/HDFS):	20/0/0/0/3.
 Cache writes (Li/WB/FS/HDFS):	0/1/0/1.
-Cache times (ACQr/m, RLS, EXP):	10.639/0.000/0.001/0.035 sec.
+Cache times (ACQr/m, RLS, EXP):	10.665/0.000/0.001/0.035 sec.
 HOP DAGs recompiled (PRED, SB):	0/2.
 HOP DAGs recompile time:	0.008 sec.
 TransformEncode num. encoders:	1
 TransformEncode build time:	0.000 sec.
-TransformEncode apply time:	357.383 sec.
-	WordEmbedding apply time:	357.383 sec.
-TransformEncode PreProc. time:	0.249 sec.
-TransformEncode PostProc. time:	2.232 sec.
-Total JIT compile time:		6.763 sec.
-Total JVM GC count:		2.
-Total JVM GC time:		1.419 sec.
+TransformEncode apply time:	341.414 sec.
+	WordEmbedding apply time:	341.414 sec.
+TransformEncode PreProc. time:	0.183 sec.
+TransformEncode PostProc. time:	2.204 sec.
+Total JIT compile time:		6.324 sec.
+Total JVM GC count:		3.
+Total JVM GC time:		2.189 sec.
 Heavy hitter instructions:
   #  Instruction     Time(s)  Count
-  1  transformapply   11.430      1
-  2  rightIndex       10.611      3
-  3  uak+              6.878      6
-  4  write             0.035      1
-  5  ncol              0.030      2
-  6  time              0.012     16
+  1  transformapply   10.955      1
+  2  rightIndex       10.625      3
+  3  uak+              9.412      6
+  4  ncol              0.042      2
+  5  write             0.035      1
+  6  time              0.011     16
   7  toString          0.007      3
-  8  floor             0.004      7
-  9  +                 0.003     24
- 10  rand              0.003      1
+  8  +                 0.004     24
+  9  floor             0.003      7
+ 10  rand              0.002      1
 
 java -Xmx210g -Xms210g -Xmn21g             -cp target3/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t_fullsum.dml             -stats             -exec singlenode             -args data/words2_50_2400.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-full-sum/19.csv
 0.148
@@ -1110,49 +1110,49 @@ tabriz
 .·1
 
 (120163200, 300)
-Elapsed time for transform = 15643.0 millsec
-0.0
-Elapsed time = 31.0 millsec
-0.0
-Elapsed time = 12.0 millsec
-0.0
-Elapsed time = 10.0 millsec
-0.0
-Elapsed time = 10.0 millsec
-0.0
-Elapsed time = 11.0 millsec
-0.0
-Elapsed time = 11.0 millsec
+Elapsed time for transform = 12394.0 millsec
+2.1366532597086978E8
+Elapsed time = 5065.0 millsec
+2.1366532597086978E8
+Elapsed time = 4665.0 millsec
+2.1366532597086978E8
+Elapsed time = 4628.0 millsec
+2.1366532597086978E8
+Elapsed time = 4626.0 millsec
+2.1366532597086978E8
+Elapsed time = 4636.0 millsec
+2.1366532597086978E8
+Elapsed time = 4632.0 millsec
 SystemDS Statistics:
-Total elapsed time:		28.963 sec.
-Total compilation time:		0.634 sec.
-Total execution time:		28.329 sec.
+Total elapsed time:		52.818 sec.
+Total compilation time:		0.572 sec.
+Total execution time:		52.246 sec.
 Cache hits (Mem/Li/WB/FS/HDFS):	20/0/0/0/3.
 Cache writes (Li/WB/FS/HDFS):	0/1/0/1.
-Cache times (ACQr/m, RLS, EXP):	12.504/0.000/0.001/0.047 sec.
+Cache times (ACQr/m, RLS, EXP):	11.511/0.000/0.001/0.043 sec.
 HOP DAGs recompiled (PRED, SB):	0/2.
-HOP DAGs recompile time:	0.010 sec.
+HOP DAGs recompile time:	0.009 sec.
 TransformEncode num. encoders:	1
 TransformEncode build time:	0.000 sec.
-TransformEncode apply time:	53.329 sec.
-	WordEmbedding apply time:	53.329 sec.
-TransformEncode PreProc. time:	0.282 sec.
-TransformEncode PostProc. time:	2.652 sec.
-Total JIT compile time:		6.526 sec.
-Total JVM GC count:		3.
-Total JVM GC time:		2.384 sec.
+TransformEncode apply time:	387.717 sec.
+	WordEmbedding apply time:	387.717 sec.
+TransformEncode PreProc. time:	0.223 sec.
+TransformEncode PostProc. time:	2.718 sec.
+Total JIT compile time:		5.417 sec.
+Total JVM GC count:		2.
+Total JVM GC time:		1.348 sec.
 Heavy hitter instructions:
   #  Instruction     Time(s)  Count
-  1  transformapply   15.637      1
-  2  rightIndex       12.477      3
-  3  uak+              0.088      6
-  4  write             0.047      1
-  5  ncol              0.029      2
-  6  time              0.016     16
-  7  toString          0.006      3
+  1  uak+             28.254      6
+  2  transformapply   12.389      1
+  3  rightIndex       11.481      3
+  4  write             0.043      1
+  5  ncol              0.033      2
+  6  time              0.014     16
+  7  toString          0.007      3
   8  +                 0.003     24
-  9  rand              0.003      1
- 10  floor             0.003      7
+  9  floor             0.003      7
+ 10  rand              0.002      1
 
 java -Xmx210g -Xms210g -Xmn21g             -cp target6/SystemDS.jar:target/lib/*             org.apache.sysds.api.DMLScript             -f dml_scripts/t_fullsum.dml             -stats             -exec singlenode             -args data/words2_50_2400.csv data/words_dictionary2_50.csv data/word_embeddings2_50.csv results-test-n-full-sum/20.csv
 0.148
@@ -1168,53 +1168,53 @@ tabriz
 .·1
 
 (120163200, 300)
-Elapsed time for transform = 12138.0 millsec
+Elapsed time for transform = 13362.0 millsec
 thread: 48
 2.1366532597086978E8
-Elapsed time = 2061.0 millsec
+Elapsed time = 1885.0 millsec
 thread: 48
 2.1366532597086978E8
-Elapsed time = 1156.0 millsec
+Elapsed time = 1224.0 millsec
 thread: 48
 2.1366532597086978E8
-Elapsed time = 1073.0 millsec
+Elapsed time = 1122.0 millsec
 thread: 48
 2.1366532597086978E8
-Elapsed time = 1102.0 millsec
+Elapsed time = 1092.0 millsec
 thread: 48
 2.1366532597086978E8
-Elapsed time = 1077.0 millsec
+Elapsed time = 1117.0 millsec
 thread: 48
 2.1366532597086978E8
-Elapsed time = 1097.0 millsec
+Elapsed time = 1127.0 millsec
 SystemDS Statistics:
-Total elapsed time:		32.103 sec.
-Total compilation time:		0.612 sec.
-Total execution time:		31.490 sec.
+Total elapsed time:		33.112 sec.
+Total compilation time:		0.584 sec.
+Total execution time:		32.528 sec.
 Cache hits (Mem/Li/WB/FS/HDFS):	20/0/0/0/3.
 Cache writes (Li/WB/FS/HDFS):	0/1/0/1.
-Cache times (ACQr/m, RLS, EXP):	11.697/0.000/0.001/0.040 sec.
+Cache times (ACQr/m, RLS, EXP):	11.511/0.000/0.002/0.034 sec.
 HOP DAGs recompiled (PRED, SB):	0/2.
 HOP DAGs recompile time:	0.011 sec.
 TransformEncode num. encoders:	1
 TransformEncode build time:	0.000 sec.
-TransformEncode apply time:	379.459 sec.
-	WordEmbedding apply time:	379.459 sec.
-TransformEncode PreProc. time:	0.324 sec.
-TransformEncode PostProc. time:	2.417 sec.
-Total JIT compile time:		6.885 sec.
+TransformEncode apply time:	386.712 sec.
+	WordEmbedding apply time:	386.712 sec.
+TransformEncode PreProc. time:	0.263 sec.
+TransformEncode PostProc. time:	3.318 sec.
+Total JIT compile time:		5.928 sec.
 Total JVM GC count:		2.
-Total JVM GC time:		1.39 sec.
+Total JVM GC time:		1.398 sec.
 Heavy hitter instructions:
   #  Instruction     Time(s)  Count
-  1  transformapply   12.131      1
-  2  rightIndex       11.672      3
-  3  uak+              7.567      6
-  4  write             0.041      1
-  5  ncol              0.028      2
-  6  time              0.014     16
-  7  toString          0.006      3
-  8  floor             0.004      7
-  9  +                 0.003     24
+  1  transformapply   13.353      1
+  2  rightIndex       11.480      3
+  3  uak+              7.568      6
+  4  write             0.034      1
+  5  ncol              0.033      2
+  6  time              0.016     16
+  7  toString          0.007      3
+  8  +                 0.006     24
+  9  floor             0.005      7
  10  rand              0.003      1
 
